@@ -3,79 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baterie Samochodowe i Produkty Przemysłowe</title>
+    <title>Baterie Samochodowe - Instalacja i Sprzedaż</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-gray-100 mx-auto max-w-screen-md">
-    <!-- Header -->
-    <header class="bg-blue-600 text-white p-4 text-center text-xl font-bold">
-      Car Batteries & Industrial Goods
+  <body class="bg-gray-100">
+    <!-- Hero Section -->
+    <header class="bg-blue-900 text-white py-32">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6"
+      >
+        <div class="text-center md:text-left md:w-1/2">
+          <h1 class="text-5xl font-bold">
+            Baterie Samochodowe - Sprzedaż i Instalacja
+          </h1>
+          <p class="mt-4 text-lg">
+            Profesjonalna obsługa i szeroki wybór baterii do każdego pojazdu
+          </p>
+          <a
+            href="#kontakt"
+            class="mt-6 inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded"
+            >Skontaktuj się z nami</a
+          >
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+          <img
+            src="https://placehold.co/400x300/png"
+            alt="Bateria Samochodowa"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="text-center py-12 bg-white shadow-md">
-      <h1 class="text-4xl font-bold">
-        Bezpieczeństwe i Dostępność Baterii Samochodowych i Produktów
-        Przemysłowych
-      </h1>
-      <p class="mt-4 text-gray-600">
-        Zapewniamy wysokiej jakości produkty dla twojego samochodu.
-      </p>
-      <a
-        href="#contact"
-        class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg"
+    <!-- Features Section -->
+    <section class="py-16 text-center bg-gray-50">
+      <h2 class="text-3xl font-semibold text-blue-900">Nasze Usługi</h2>
+      <div
+        class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6"
       >
-        Skontaktuj się z nami
-      </a>
-    </section>
-
-    <!-- About Section -->
-    <section class="p-8 bg-gray-50">
-      <h2 class="text-3xl font-bold text-center">O Nas</h2>
-      <p class="text-center text-gray-700 mt-4">
-        Specjalizujemy się w akumulatorach samochodowych, produktach
-        przemysłowych i wysokiej jakości dodatków do samochodów.
-      </p>
-    </section>
-
-    <!-- Services Section -->
-    <section class="p-8">
-      <h2 class="text-3xl font-bold text-center">Nasze Usługi</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <div class="bg-white p-6 shadow-md text-center">
-          <h3 class="text-xl font-bold">Akumulatory Samochodowe</h3>
-          <p class="text-gray-600">
-            Wytrzymałe i długotrwałe akumulatory dla wszystkich samochód
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition border-l-4 border-yellow-400"
+        >
+          <h3 class="font-bold text-xl text-blue-900">Sprzedaż Baterii</h3>
+          <p class="mt-2 text-gray-600">
+            Szeroki wybór baterii najlepszych marek.
           </p>
         </div>
-        <div class="bg-white p-6 shadow-md text-center">
-          <h3 class="text-xl font-bold">Produkty Przemysłowe</h3>
-          <p class="text-gray-600">
-            Wysokiej jakości materiały przemysłowe dla twojego biznesu.
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition border-l-4 border-yellow-400"
+        >
+          <h3 class="font-bold text-xl text-blue-900">Instalacja</h3>
+          <p class="mt-2 text-gray-600">
+            Profesjonalna instalacja baterii na miejscu.
           </p>
         </div>
-        <div class="bg-white p-6 shadow-md text-center">
-          <h3 class="text-xl font-bold">Usługi Instalacyjne</h3>
-          <p class="text-gray-600">
-            Szybka i profesjonalna instalacja akumulatorów samochodowych.
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition border-l-4 border-yellow-400"
+        >
+          <h3 class="font-bold text-xl text-blue-900">Darmowe Testowanie</h3>
+          <p class="mt-2 text-gray-600">
+            Sprawdzimy stan Twojej baterii za darmo.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg hover:scale-105 transition border-l-4 border-yellow-400"
+        >
+          <h3 class="font-bold text-xl text-blue-900">Recykling</h3>
+          <p class="mt-2 text-gray-600">
+            Zadbaj o środowisko – przynieś nam starą baterię.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="p-8 bg-gray-50">
-      <h2 class="text-3xl font-bold text-center">Contact Us</h2>
-      <div class="text-center mt-4">
-        <p class="text-gray-700">📍 Katowice</p>
-        <p class="text-gray-700">📞 XXX-XXX-XXX</p>
-        <p class="text-gray-700">✉️ info@carbatteries.com</p>
+    <!-- Logo Cloud -->
+    <section class="bg-gray-200 py-10 text-center">
+      <h2 class="text-3xl font-semibold text-blue-900">
+        Współpracujemy z najlepszymi
+      </h2>
+      <div class="mt-6 flex flex-wrap justify-center gap-6 px-4">
+        <img
+          src="https://placehold.co/100x50/png"
+          alt="Brand 1"
+          class="w-24 md:w-32"
+        />
+        <img
+          src="https://placehold.co/100x50/png"
+          alt="Brand 2"
+          class="w-24 md:w-32"
+        />
+        <img
+          src="https://placehold.co/100x50/png"
+          alt="Brand 3"
+          class="w-24 md:w-32"
+        />
+        <img
+          src="https://placehold.co/100x50/png"
+          alt="Brand 4"
+          class="w-24 md:w-32"
+        />
+      </div>
+    </section>
+
+    <!-- Image Grid -->
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-semibold text-blue-900">Rodzaje Baterii</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+        <img
+          src="https://placehold.co/300x200/png"
+          alt="Bateria 1"
+          class="rounded-lg shadow-lg hover:scale-105 transition"
+        />
+        <img
+          src="https://placehold.co/300x200/png"
+          alt="Bateria 2"
+          class="rounded-lg shadow-lg hover:scale-105 transition"
+        />
+        <img
+          src="https://placehold.co/300x200/png"
+          alt="Bateria 3"
+          class="rounded-lg shadow-lg hover:scale-105 transition"
+        />
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="kontakt" class="bg-gray-200 py-16 px-6">
+      <h2 class="text-3xl font-semibold text-blue-900 text-center">O Nas</h2>
+      <div class="mt-8 flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 text-left">
+          <p><strong>Adres:</strong>Miła 8, 40-467 Katowice (Giszowiec)</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:dariusz.cieszynski@wp.pl" class="text-blue-900"
+              >dariusz.cieszynski@wp.pl</a
+            >
+          </p>
+          <p>
+            <strong>Telefon:</strong>
+            <a href="tel:+48501436661" class="text-blue-900">501 436 661</a>
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center mt-6 md:mt-0">
+          <iframe
+            width="100%"
+            height="300"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?q=Miła+8,Katowice,Poland&key=YOUR_API_KEY"
+          >
+          </iframe>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
-      &copy; 2025 Car Batteries & Industrial Goods. Wszelkie Prawa Zastrzeżone.
+    <footer class="bg-blue-900 text-white text-center py-6">
+      <p>Sprzedaż artykułów przemysłowych Dariusz Cieszyński</p>
+      <p>NIP: 954 100 63 32</p>
     </footer>
   </body>
 </html>
