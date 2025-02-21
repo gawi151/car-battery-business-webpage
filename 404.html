@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nie znaleziono strony - Przekierowywanie...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .message {
+            margin-bottom: 1rem;
+        }
+        .countdown {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .redirect-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .redirect-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nie znaleziono strony</h1>
+        <div class="message">
+            Strona, której szukasz, nie istnieje.
+        </div>
+        <div class="countdown">
+            Przekierowanie na stronę główną za <span id="timer">3</span> sekund...
+        </div>
+        <p>
+            <a href="/" class="redirect-link">Kliknij tutaj</a> jeśli nie zostaniesz przekierowany automatycznie.
+        </p>
+    </div>
+
+    <script>
+        let timeLeft = 3;
+        const timerElement = document.getElementById('timer');
+        
+        // Start countdown
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = '/';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
