@@ -50,15 +50,218 @@
             border-color: #fff;
         }
 
-        .contact-card-link {
-            color: #1e3a8a;
+        .contact-heading {
+            color: #0f3470;
+            font-size: clamp(2.5rem, 7vw, 4rem);
             font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 2px;
+            line-height: 1.05;
         }
 
-        .map-iframe {
-            border: 0;
+        .contact-heading::after {
+            content: "";
+            display: block;
+            width: 5.75rem;
+            height: 0.25rem;
+            margin-top: 1.5rem;
+            border-radius: 999px;
+            background-color: #eab308;
+        }
+
+        .contact-lead {
+            max-width: 56rem;
+            margin-top: 1.75rem;
+            color: #1f2937;
+            font-size: 1.125rem;
+            line-height: 1.65;
+        }
+
+        .contact-action-rail {
+            display: grid;
+            margin-top: 3rem;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            background-color: #0f3470;
+            box-shadow: 0 18px 40px -22px rgb(15 52 112 / 0.65);
+        }
+
+        .contact-action {
+            display: flex;
+            min-height: 6.75rem;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 200ms, transform 200ms;
+        }
+
+        .contact-action + .contact-action {
+            border-top: 1px solid rgba(255, 255, 255, 0.24);
+        }
+
+        .contact-action:hover,
+        .contact-action:focus-visible {
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .contact-action-icon {
+            display: inline-flex;
+            width: 4rem;
+            height: 4rem;
+            flex: 0 0 auto;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #facc15;
+            border-radius: 999px;
+            color: #facc15;
+        }
+
+        .contact-action-icon svg {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .contact-action strong {
+            display: block;
+            font-size: 1.35rem;
+            line-height: 1.2;
+        }
+
+        .contact-action-value {
+            display: block;
+            margin-top: 0.25rem;
+            color: #facc15;
+            font-size: clamp(1.2rem, 3vw, 1.65rem);
+            font-weight: 700;
+            line-height: 1.2;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-action-email .contact-action-value {
+            font-size: clamp(1rem, 1.75vw, 1.25rem);
+        }
+
+        .contact-action-note {
+            display: block;
+            margin-top: 0.5rem;
+            color: #eff6ff;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .location-panel {
+            display: grid;
+            gap: 2rem;
+            margin-top: 0;
+            padding: 2rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0 0 0.5rem 0.5rem;
+            background-color: #fff;
+            box-shadow: 0 18px 40px -28px rgb(15 52 112 / 0.32);
+        }
+
+        .location-content {
+            display: grid;
+            gap: 1.75rem;
+            align-content: center;
+        }
+
+        .location-address {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 1.25rem;
+            align-items: center;
+            color: #0f3470;
+        }
+
+        .location-address-icon,
+        .location-hours-icon {
+            color: #0f3470;
+        }
+
+        .location-address-icon svg {
+            width: 3.25rem;
+            height: 3.25rem;
+        }
+
+        .location-address h3 {
+            margin: 0;
+            font-size: clamp(1.8rem, 5vw, 2.6rem);
+            font-weight: 700;
+            line-height: 1.12;
+        }
+
+        .location-address h3::after {
+            content: "";
+            display: block;
+            width: 5.75rem;
+            height: 0.25rem;
+            margin-top: 1.25rem;
+            border-radius: 999px;
+            background-color: #eab308;
+        }
+
+        .location-hours {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 1.25rem;
+            align-items: start;
+            color: #1f2937;
+            font-size: 1.0625rem;
+            line-height: 1.65;
+        }
+
+        .location-hours-icon svg {
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+
+        .directions-button {
+            display: inline-flex;
+            width: 100%;
+            max-width: 23.5rem;
+            min-height: 4.5rem;
+            align-items: center;
+            justify-content: center;
+            gap: 0.85rem;
+            border-radius: 0.5rem;
+            background-color: #eab308;
+            color: #0f3470;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 200ms, transform 200ms, box-shadow 200ms;
+        }
+
+        .directions-button:hover,
+        .directions-button:focus-visible {
+            background-color: #facc15;
+            box-shadow: 0 18px 24px -18px rgb(15 52 112 / 0.5);
+            transform: translateY(-1px);
+        }
+
+        .directions-button svg {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+
+        .privacy-hint {
+            color: #4b5563;
+            font-size: 0.9375rem;
+            line-height: 1.55;
+        }
+
+        .location-illustration {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 16rem;
+        }
+
+        .location-illustration img {
+            width: min(100%, 36rem);
+            height: auto;
         }
 
         .brand-logo {
@@ -81,6 +284,52 @@
         @media (min-width: 768px) {
             .hero-actions {
                 justify-content: flex-start;
+            }
+
+            .contact-action-rail {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .contact-action + .contact-action {
+                border-top: 0;
+                border-left: 1px solid rgba(255, 255, 255, 0.24);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .location-panel {
+                grid-template-columns: minmax(25rem, 0.95fr) minmax(28rem, 1.05fr);
+                padding: 3rem 4rem;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .contact-action {
+                min-height: 8.75rem;
+                gap: 1.5rem;
+                padding: 1.75rem 2rem;
+            }
+
+            .contact-action-icon {
+                width: 5rem;
+                height: 5rem;
+            }
+
+            .contact-action-icon svg {
+                width: 2.35rem;
+                height: 2.35rem;
+            }
+
+            .contact-action strong {
+                font-size: 1.625rem;
+            }
+
+            .contact-action-value {
+                font-size: clamp(1.25rem, 3vw, 1.85rem);
+            }
+
+            .contact-action-email .contact-action-value {
+                font-size: clamp(1.1rem, 1.75vw, 1.65rem);
             }
         }
     </style>
@@ -181,7 +430,7 @@
                             class="inline-block bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded transition duration-300"
                             data-umami-event="hero-phone-cta">Zadzwoń:&nbsp;501&nbsp;436&nbsp;661</a>
                         <a href="#kontakt" class="hero-secondary" data-umami-event="hero-contact-secondary-cta">Kontakt
-                            i mapa</a>
+                            i dojazd</a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex flex-col items-center mt-8 md:mt-0">
@@ -325,55 +574,97 @@
             </div>
         </section>
 
-        <!-- About Us Section -->
-        <section id="kontakt" class="bg-gray-200">
+        <!-- Contact Section -->
+        <section id="kontakt" class="bg-white" aria-labelledby="contact-heading">
             <div class="py-16 px-6 container mx-auto">
-                <h2 class="text-3xl font-semibold text-blue-900 text-center">O Nas</h2>
-                <div class="mt-16 flex flex-col md:flex-row justify-between">
-                    <div class="md:w-1/2 text-left mr-4">
-                        <h3 class="font-bold text-xl mb-4">Skontaktuj się z nami!</h3>
-                        <p class="mb-2">Jesteśmy tutaj, aby pomóc Ci:</p>
-                        <ul class="list-disc list-inside mb-2">
-                            <li>W wyborze najlepszego akumulatora dla Twojego pojazdu.</li>
-                            <li>Odpowiedzieć na wszystkie Twoje pytania.</li>
-                            <li>Pomóc w każdej sytuacji.</li>
-                        </ul>
-                        <p class="mt-4">Nie wahaj się z nami skontaktować! Odpowiemy na wszystkie Twoje pytania i
-                            pomożemy w
-                            każdej sytuacji.</p>
+                <h2 id="contact-heading" class="contact-heading">Kontakt i dojazd</h2>
+                <p class="contact-lead">Skontaktuj się z nami lub wyznacz trasę do naszego punktu w Giszowcu.</p>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-start">
-                                <span class="font-bold mb-1">Email:</span>
-                                <a href="mailto:dariusz.cieszynski@wp.pl"
-                                    class="text-blue-900 hover:underline">dariusz.cieszynski@wp.pl</a>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-start">
-                                <span class="font-bold mb-1">Telefon:</span>
-                                <a href="tel:+48501436661" class="text-blue-900 hover:underline">501&nbsp;436&nbsp;661</a>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-start md:col-span-2">
-                                <span class="font-bold mb-1">Adres:</span>
-                                <p>Miła 8, 40-464 Katowice (Giszowiec)</p>
-                                <a href="https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice"
-                                    class="contact-card-link mt-2" target="_blank" rel="noopener">Jak dojechać</a>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-start md:col-span-2">
-                                <span class="font-bold mb-1">Godziny otwarcia:</span>
-                                <p>Poniedziałek-piątek: 9:00-21:00</p>
-                                <p>Sobota: 9:00-20:00</p>
-                                <p>Niedziela: 9:00-15:00</p>
-                            </div>
+                <nav class="contact-action-rail" aria-label="Szybki kontakt">
+                    <a class="contact-action" href="tel:+48501436661" data-umami-event="contact-phone-cta">
+                        <span class="contact-action-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.77.59 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.17a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.61.59A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <strong>Zadzwoń</strong>
+                            <span class="contact-action-value">501&nbsp;436&nbsp;661</span>
+                        </span>
+                    </a>
+                    <a class="contact-action contact-action-email" href="mailto:dariusz.cieszynski@wp.pl"
+                        data-umami-event="contact-email-cta">
+                        <span class="contact-action-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <path d="m3 7 9 6 9-6" />
+                            </svg>
+                        </span>
+                        <span>
+                            <strong>Napisz</strong>
+                            <span class="contact-action-value">dariusz.cieszynski@wp.pl</span>
+                        </span>
+                    </a>
+                    <a class="contact-action"
+                        href="https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice"
+                        target="_blank" rel="noopener noreferrer" data-umami-event="contact-directions-rail-cta">
+                        <span class="contact-action-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                <path d="M22 2 11 13" />
+                                <path d="m22 2-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <strong>Wyznacz trasę</strong>
+                            <span class="contact-action-note">Mapa Google otworzy się po kliknięciu</span>
+                        </span>
+                    </a>
+                </nav>
+
+                <div class="location-panel">
+                    <div class="location-content">
+                        <div class="location-address">
+                            <span class="location-address-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor" focusable="false">
+                                    <path
+                                        d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" />
+                                </svg>
+                            </span>
+                            <h3>Miła 8, 40-464 Katowice (Giszowiec)</h3>
                         </div>
+
+                        <div class="location-hours">
+                            <span class="location-hours-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M12 7v5l3 2" />
+                                </svg>
+                            </span>
+                            <p>Godziny: pon.-pt. 9:00-21:00, sob. 9:00-20:00, niedz. 9:00-15:00</p>
+                        </div>
+
+                        <a class="directions-button"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice"
+                            target="_blank" rel="noopener noreferrer" data-umami-event="contact-directions-button-cta">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                <path d="M22 2 11 13" />
+                                <path d="m22 2-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                            Wyznacz trasę
+                        </a>
+
+                        <p class="privacy-hint">Mapa Google otworzy się po kliknięciu.</p>
                     </div>
-                    <div class="md:w-1/2 mt-6 md:mt-0">
-                        <div class="relative w-full h-[450px]">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2552.5697159386864!2d19.0676135!3d50.2252607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cf7ec2f7fa71%3A0x955634976e85b7f5!2sSprzeda%C5%BC%20Art.%20Przemys%C5%82owych!5e0!3m2!1spl!2spl!4v1738445231025!5m2!1spl!2spl"
-                                width="600" height="450" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" class="w-full h-full map-iframe"
-                                title="Mapa dojazdu do Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński w Katowicach"></iframe>
-                        </div>
+
+                    <div class="location-illustration" aria-hidden="true">
+                        <img src="./assets/contact-directions-illustration.webp" alt="" width="1200" height="800"
+                            loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
