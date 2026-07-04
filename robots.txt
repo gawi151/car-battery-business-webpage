@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akumulatory-katowice.pl/sitemap.xml
