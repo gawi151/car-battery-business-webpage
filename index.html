@@ -214,10 +214,10 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="kontakt" class="bg-white" aria-labelledby="contact-heading">
-            <div class="py-16 px-6 container mx-auto">
-                <h2 id="contact-heading" class="contact-heading">Kontakt i dojazd</h2>
-                <p class="contact-lead">Skontaktuj się z nami lub wyznacz trasę do naszego punktu w Giszowcu.</p>
+        <section id="kontakt" class="contact-section section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="contact-heading">Kontakt i biuro</h2>
+                <p class="contact-lead">Biuro firmy znajduje się przy ul. Miłej 8 w Katowicach-Giszowcu. Montaż i test akumulatora wykonujemy przy aucie: z dojazdem do klienta albo po umówieniu przy biurze.</p>
 
                 <nav class="contact-action-rail" aria-label="Szybki kontakt">
                     <a class="contact-action" href="tel:+48501436661" data-umami-event="contact-phone-cta">
@@ -258,78 +258,40 @@
                             </svg>
                         </span>
                         <span>
-                            <strong>Wyznacz trasę</strong>
-                            <span class="contact-action-note">Mapa Google otworzy się po kliknięciu</span>
+                            <strong>Adres biura / mapa</strong>
+                            <span class="contact-action-note">Miła 8, Katowice-Giszowiec</span>
                         </span>
                     </a>
                 </nav>
 
                 <div class="location-panel">
                     <div class="location-content">
-                        <div class="location-address">
-                            <span class="location-address-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="currentColor" focusable="false">
-                                    <path
-                                        d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" />
-                                </svg>
-                            </span>
-                            <h3>Miła 8, 40-464 Katowice (Giszowiec)</h3>
-                        </div>
-
-                        <div class="location-hours">
-                            <span class="location-hours-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                                    <circle cx="12" cy="12" r="9" />
-                                    <path d="M12 7v5l3 2" />
-                                </svg>
-                            </span>
-                            <p>Godziny: pon.-pt. 9:00-21:00, sob. 9:00-20:00, niedz. 9:00-15:00</p>
-                        </div>
-
-                        <a class="directions-button"
+                        <h3>Miła 8, 40-464 Katowice (Giszowiec)</h3>
+                        <p>Godziny: pon.-pt. 9:00-21:00, sob. 9:00-20:00, niedz. 9:00-15:00</p>
+                        <a class="button button-primary directions-button"
                             href="https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice"
-                            target="_blank" rel="noopener noreferrer" data-umami-event="contact-directions-button-cta">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                                <path d="M22 2 11 13" />
-                                <path d="m22 2-7 20-4-9-9-4 20-7z" />
-                            </svg>
-                            Wyznacz trasę
-                        </a>
-
+                            target="_blank" rel="noopener noreferrer" data-umami-event="contact-directions-button-cta">Otwórz adres biura w Google Maps</a>
                         <p class="privacy-hint">Mapa Google otworzy się po kliknięciu.</p>
                     </div>
-
                     <div class="location-illustration" aria-hidden="true">
-                        <img src="./assets/contact-directions-illustration.webp" alt="" width="1200" height="800"
-                            loading="lazy" decoding="async">
+                        <img src="./assets/contact-office-service-800.webp"
+                            srcset="./assets/contact-office-service-800.webp 800w, ./assets/contact-office-service-1200.webp 1200w"
+                            sizes="(min-width: 768px) 40vw, 100vw"
+                            alt="" width="1200" height="800" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="bg-blue-900 text-white text-center py-6">
-            <div class="mb-4">
-                <p class="text-lg font-bold">Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński</p>
-                <p class="text-sm">NIP: 9541006332</p>
-                <p class="text-sm">REGON: 363046529</p>
-            </div>
-            <div class="text-xs footer-meta mt-4 flex flex-col items-center space-y-1">
-                <p>Uicons by
-                    <a href="https://www.flaticon.com/uicons">Flaticon</a>
-                </p>
-                <p>
-                    Battery icons created by Indielogy -
-                    <a href="https://www.flaticon.com/free-icons/battery" title="battery icons">Flaticon</a>
-                </p>
-            </div>
-            <div id="prywatnosc" class="privacy-note text-xs mt-4 px-6">
-                <p>Strona uruchamia statystyki odwiedzin dopiero po zgodzie. Korzysta też z Google Fonts,
-                    linku do Google Maps oraz linków telefonicznych i email.
-                    Szczegóły opisuje <a href="./privacy-policy.html">polityka prywatności</a>.</p>
-                <button class="privacy-settings" type="button" data-analytics-settings>Ustawienia prywatności</button>
+        <footer class="site-footer">
+            <div class="container">
+                <p class="footer-business">Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński</p>
+                <p class="footer-meta">NIP: 9541006332 · REGON: 363046529 · Miła 8, 40-464 Katowice (Giszowiec)</p>
+                <div id="prywatnosc" class="privacy-note">
+                    <p>Strona uruchamia statystyki odwiedzin dopiero po zgodzie. Korzysta też z linku do Google Maps oraz linków telefonicznych i email. Szczegóły opisuje <a href="./privacy-policy.html">polityka prywatności</a>.</p>
+                    <button class="privacy-settings" type="button" data-analytics-settings>Ustawienia prywatności</button>
+                </div>
             </div>
         </footer>
     </main>
@@ -345,145 +307,7 @@
         </div>
     </section>
 
-    <script>
-        (function () {
-            var storageKey = "akumulatory_analytics_consent";
-            var acceptedValue = "accepted";
-            var rejectedValue = "rejected";
-            var rejectionReminderMs = 24 * 60 * 60 * 1000;
-            var umamiScriptSrc = "https://cloud.umami.is/script.js";
-            var umamiWebsiteId = "0304e7de-a321-4985-9ac1-b251be5c31c3";
-            var banner = document.getElementById("analytics-consent");
-            var acceptButton = document.querySelector("[data-analytics-accept]");
-            var rejectButton = document.querySelector("[data-analytics-reject]");
-            var settingsButtons = document.querySelectorAll("[data-analytics-settings]");
-
-            function getPreference() {
-                var rawPreference;
-
-                try {
-                    rawPreference = window.localStorage.getItem(storageKey);
-                } catch (error) {
-                    return null;
-                }
-
-                if (!rawPreference) {
-                    return null;
-                }
-
-                try {
-                    return JSON.parse(rawPreference);
-                } catch (error) {
-                    if (rawPreference === acceptedValue || rawPreference === rejectedValue) {
-                        return {
-                            value: rawPreference,
-                            rejectedAt: rawPreference === rejectedValue ? 0 : null
-                        };
-                    }
-                }
-
-                return null;
-            }
-
-            function setPreference(value) {
-                var now = Date.now();
-                var preference = {
-                    value: value,
-                    updatedAt: now
-                };
-
-                if (value === rejectedValue) {
-                    preference.rejectedAt = now;
-                }
-
-                try {
-                    window.localStorage.setItem(storageKey, JSON.stringify(preference));
-                } catch (error) {
-                    return false;
-                }
-
-                return true;
-            }
-
-            function isRejectedPreferenceCurrent(preference) {
-                return Boolean(
-                    preference &&
-                    preference.value === rejectedValue &&
-                    typeof preference.rejectedAt === "number" &&
-                    !isRejectedPreferenceExpired(preference)
-                );
-            }
-
-            function isRejectedPreferenceExpired(preference) {
-                return Date.now() - preference.rejectedAt >= rejectionReminderMs;
-            }
-
-            function hasUmamiLoaded() {
-                return Boolean(document.querySelector('script[src="' + umamiScriptSrc + '"]'));
-            }
-
-            function loadUmami() {
-                if (hasUmamiLoaded()) {
-                    return;
-                }
-
-                var script = document.createElement("script");
-                script.defer = true;
-                script.src = umamiScriptSrc;
-                script.setAttribute("data-website-id", umamiWebsiteId);
-                script.setAttribute("data-analytics-umami", "true");
-                document.head.appendChild(script);
-            }
-
-            function showBanner() {
-                if (banner) {
-                    banner.hidden = false;
-                }
-            }
-
-            function hideBanner() {
-                if (banner) {
-                    banner.hidden = true;
-                }
-            }
-
-            function acceptAnalytics() {
-                setPreference(acceptedValue);
-                hideBanner();
-                loadUmami();
-            }
-
-            function rejectAnalytics() {
-                var hadLoadedUmami = hasUmamiLoaded();
-                setPreference(rejectedValue);
-                hideBanner();
-
-                if (hadLoadedUmami) {
-                    window.location.reload();
-                }
-            }
-
-            if (acceptButton) {
-                acceptButton.addEventListener("click", acceptAnalytics);
-            }
-
-            if (rejectButton) {
-                rejectButton.addEventListener("click", rejectAnalytics);
-            }
-
-            settingsButtons.forEach(function (button) {
-                button.addEventListener("click", showBanner);
-            });
-
-            var preference = getPreference();
-
-            if (preference && preference.value === acceptedValue) {
-                loadUmami();
-            } else if (!isRejectedPreferenceCurrent(preference)) {
-                showBanner();
-            }
-        }());
-    </script>
+    <script src="./assets/analytics-consent.js" defer></script>
 </body>
 
 </html>
