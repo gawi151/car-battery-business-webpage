@@ -66,6 +66,26 @@ Dark areas should have a purpose:
 
 They should not be used as decoration or to make every section feel urgent.
 
+## Asset Direction
+
+The modernization should replace current third-party stock/attribution-bound assets with original project assets so the footer no longer needs Freepik/Flaticon-style attribution links.
+
+Requirements:
+
+- Replace the current stock hero image with an original/generated visual that matches the final medium-blue, diagnosis-first design.
+- Replace Flaticon-style service/check icons with original assets or self-authored inline SVG/icons that do not require attribution.
+- Replace the contact/directions illustration if it no longer fits the updated visual system or if removing attribution-bound assets makes the visual system more coherent.
+- Keep generated raster assets in the workspace under `assets/` with descriptive names and explicit dimensions in HTML.
+- Optimize generated images to WebP or AVIF where practical, with sensible fallbacks only if needed.
+- Do not overwrite existing assets without preserving a clear migration path in Git.
+- Remove footer attribution links only after the attributed assets are no longer referenced anywhere.
+
+Preferred asset approach:
+
+- Use generated/original imagery for photo-like or illustrative visuals.
+- Use simple self-authored SVG or a no-attribution icon approach for UI/service icons when deterministic crisp icons are better than generated raster icons.
+- Keep real brand logos only if the business intentionally wants to show those brands; do not generate fake brand logos.
+
 ## Final Homepage Structure
 
 ### 1. Hero
@@ -240,16 +260,19 @@ Requirements:
 
 ## Implementation Notes
 
-- Keep the site static and continue using the existing asset set.
+- Keep the site static.
+- Replace attribution-bound stock/icon assets as described in Asset Direction.
+- Reuse existing brand and product assets only when they still fit the final visual system and are intentionally retained.
 - Keep the redesigned contact components as the strongest style reference.
 - Replace old generic service/card copy with the final copy in this spec.
 - Update metadata only if the final visible copy materially changes page positioning.
 - Preserve phone and email tracking attributes where existing analytics events are already present.
 - Ensure mobile layout keeps phone CTA, `Jak działamy`, and contact actions easy to scan.
-- Review the CSS strategy instead of blindly keeping or removing Tailwind.
-- Current `assets/output.css` is about 32 KB uncompressed, so Tailwind is not an obvious page-weight emergency by itself.
-- If the implementation becomes mostly custom section CSS, replace Tailwind utilities with a small hand-authored stylesheet and remove unused Tailwind output.
-- If Tailwind utilities remain the fastest maintainable path, keep generated CSS small, purged, and shared consistently across `index.html`, `404.html`, and `privacy-policy.html`.
+- Prefer replacing Tailwind with a small, hand-authored shared stylesheet because the current Tailwind generation path is not documented.
+- Current `assets/output.css` is about 32 KB uncompressed, so this is primarily a maintainability decision rather than a page-weight emergency.
+- Remove Tailwind utility classes from `index.html`, `404.html`, and `privacy-policy.html` as part of the redesign if practical.
+- Remove `assets/input.css` and `assets/output.css` only after no page references them.
+- Keep Tailwind only if the implementation first documents a repeatable build path and the user explicitly accepts continuing with it.
 - Avoid duplicating large inline style blocks across pages; prefer shared CSS for the common visual system.
 
 ## Verification
@@ -263,6 +286,11 @@ Before implementation is accepted:
 - Confirm secondary CTA scrolls to `Jak działamy`.
 - Confirm contact section contains phone, email, office address, hours, and the office clarification copy.
 - Confirm `404.html` and `privacy-policy.html` visually match the modernized homepage system.
+- Confirm no removed asset is still referenced by any HTML, CSS, metadata, or structured data.
+- Confirm footer attribution links are removed only if all attributed Freepik/Flaticon assets are gone.
+- Confirm generated/original assets are optimized, have stable dimensions, and are saved under `assets/`.
+- Confirm `assets/output.css` is no longer referenced if Tailwind is removed.
+- Confirm the CSS source of truth is documented and repeatable.
 - Run an accessibility audit with Lighthouse or axe where available.
 - Manually verify keyboard navigation, visible focus states, semantic headings, link purpose, target sizes, and 200% zoom.
 - Check color contrast for medium-blue hero text, yellow CTA text, navy rails, and footer links.
