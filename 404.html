@@ -6,148 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
     <title>Nie znaleziono strony - Akumulatory Katowice</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #1e3a8a;
-            color: #111827;
-            font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        main {
-            width: min(100%, 48rem);
-            padding: clamp(1.5rem, 5vw, 2.5rem);
-            text-align: center;
-            background-color: #fff;
-            border-top: 0.25rem solid #facc15;
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-
-        .brand {
-            margin: 0 0 0.75rem;
-            color: #1e3a8a;
-            font-size: 1rem;
-            font-weight: 700;
-        }
-
-        h1 {
-            margin: 0;
-            color: #1e3a8a;
-            font-size: clamp(2rem, 8vw, 3rem);
-            line-height: 1.1;
-        }
-
-        p {
-            margin: 1rem 0 0;
-            font-size: 1.125rem;
-            line-height: 1.6;
-        }
-
-        .actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1.5rem;
-        }
-
-        a {
-            color: #1e3a8a;
-            font-weight: 700;
-            text-underline-offset: 2px;
-        }
-
-        a:focus-visible {
-            outline: 3px solid #facc15;
-            outline-offset: 3px;
-        }
-
-        .button {
-            display: inline-flex;
-            min-height: 2.75rem;
-            align-items: center;
-            justify-content: center;
-            padding: 0.75rem 1.25rem;
-            border-radius: 0.25rem;
-            background-color: #eab308;
-            color: #1e3a8a;
-            line-height: 1.2;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .button:hover,
-        .button:focus-visible {
-            background-color: #facc15;
-        }
-
-        .secondary-link {
-            display: inline-flex;
-            min-height: 2.75rem;
-            align-items: center;
-            justify-content: center;
-            padding: 0.6875rem 1rem;
-            border: 1px solid #94a3b8;
-            border-radius: 0.25rem;
-            background-color: #fff;
-            color: #1e3a8a;
-            line-height: 1.2;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .secondary-link:hover,
-        .secondary-link:focus-visible {
-            border-color: #eab308;
-            background-color: #f8fafc;
-        }
-
-        .legal-link {
-            display: inline-block;
-            margin-top: 1.5rem;
-            color: #374151;
-            font-size: 0.9375rem;
-            font-weight: 600;
-        }
-
-        @media (max-width: 40rem) {
-            .actions {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-
-            .button,
-            .secondary-link {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link href="./assets/site.css" rel="stylesheet">
 </head>
 
-<body>
-    <main>
-        <p class="brand">Akumulatory Katowice</p>
-        <h1>Nie znaleziono strony</h1>
-        <p>Strona, której szukasz, nie istnieje albo została przeniesiona. Możesz zadzwonić albo wrócić na stronę główną.</p>
-        <nav class="actions" aria-label="Najważniejsze linki">
-            <a class="button" href="tel:+48501436661">Zadzwoń:&nbsp;501&nbsp;436&nbsp;661</a>
-            <a class="secondary-link" href="/">Wróć na stronę główną</a>
-        </nav>
-        <a class="legal-link" href="/privacy-policy.html">Polityka prywatności</a>
+<body class="page-shell">
+    <main class="not-found-wrap">
+        <section class="not-found-card" aria-labelledby="not-found-heading">
+            <p class="footer-business">Akumulatory Katowice</p>
+            <h1 id="not-found-heading">Nie znaleziono strony</h1>
+            <p>Ten adres nie prowadzi już do aktywnej podstrony. Wróć na stronę główną albo zadzwoń, jeśli chcesz zapytać o akumulator.</p>
+            <nav class="hero-actions" aria-label="Najważniejsze linki">
+                <a class="button button-primary" href="/">Wróć na stronę główną</a>
+                <a class="button button-outline" href="tel:+48501436661" data-umami-event="not-found-phone-cta">Zadzwoń: 501&nbsp;436&nbsp;661</a>
+            </nav>
+            <p><a href="/privacy-policy.html">Polityka prywatności</a></p>
+        </section>
     </main>
+
+    <section id="analytics-consent" class="analytics-consent" aria-label="Zgoda na statystyki" hidden>
+        <div class="analytics-consent__inner">
+            <p>Pomóż nam sprawdzić, czy strona jest przydatna. Za zgodą uruchomimy anonimowe statystyki odwiedzin bez reklam i profilowania.
+                <a href="./privacy-policy.html">Polityka prywatności</a></p>
+            <div class="analytics-consent__actions">
+                <button class="analytics-consent__reject" type="button" data-analytics-reject>Odrzuć</button>
+                <button class="analytics-consent__accept" type="button" data-analytics-accept>Akceptuję statystyki</button>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/analytics-consent.js" defer></script>
 </body>
 
 </html>
