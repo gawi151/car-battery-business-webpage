@@ -259,25 +259,54 @@
                         </span>
                         <span>
                             <strong>Adres biura / mapa</strong>
-                            <span class="contact-action-note">Miła 8, Katowice-Giszowiec</span>
+                            <span class="contact-action-value">Miła 8</span>
+                            <span class="contact-action-note">Katowice-Giszowiec</span>
                         </span>
                     </a>
                 </nav>
 
-                <div class="location-panel">
-                    <div class="location-content">
-                        <h3>Miła 8, 40-464 Katowice (Giszowiec)</h3>
-                        <p>Godziny: pon.-pt. 9:00-21:00, sob. 9:00-20:00, niedz. 9:00-15:00</p>
-                        <a class="button button-primary directions-button"
-                            href="https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice"
-                            target="_blank" rel="noopener noreferrer" data-umami-event="contact-directions-button-cta">Otwórz adres biura w Google Maps</a>
-                        <p class="privacy-hint">Mapa Google otworzy się po kliknięciu.</p>
+                <div class="contact-support">
+                    <div class="location-panel">
+                        <div class="location-content">
+                            <h3>Miła 8, 40-464 Katowice (Giszowiec)</h3>
+                            <p>To adres biura firmy. Przed przyjazdem zadzwoń i potwierdź szczegóły.</p>
+                            <p>Godziny: pon.-pt. 9:00-21:00, sob. 9:00-20:00, niedz. 9:00-15:00</p>
+                            <a class="button button-primary directions-button"
+                                href="https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice"
+                                target="_blank" rel="noopener noreferrer" data-umami-event="contact-directions-button-cta">Adres biura w Google Maps</a>
+                            <p class="privacy-hint">Mapa Google otworzy się po kliknięciu.</p>
+                        </div>
+                        <div class="location-content">
+                            <h3>Adres biura i praca przy aucie</h3>
+                            <ul class="contact-note-list">
+                                <li>Biuro jest adresem kontaktowym firmy.</li>
+                                <li>Test i montaż wykonujemy przy samochodzie.</li>
+                                <li>Dojazd albo wizyta przy biurze wymaga wcześniejszego ustalenia.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="location-illustration" aria-hidden="true">
-                        <img src="./assets/contact-office-service-800.webp"
-                            srcset="./assets/contact-office-service-800.webp 800w, ./assets/contact-office-service-1200.webp 1200w"
-                            sizes="(min-width: 768px) 40vw, 100vw"
-                            alt="" width="1200" height="800" loading="lazy" decoding="async">
+                    <div class="contact-visual" aria-hidden="true">
+                        <svg viewBox="0 0 320 280" focusable="false">
+                            <path class="contact-visual-route" d="M69 86c52 0 47 86 103 86 42 0 48-47 88-47" />
+                            <g class="contact-visual-office">
+                                <rect x="42" y="52" width="72" height="70" rx="6" />
+                                <path d="M58 122V72h40v50" />
+                                <path d="M67 88h8M86 88h8M67 104h8M86 104h8" />
+                            </g>
+                            <g class="contact-visual-car">
+                                <path d="M196 160h58l18 20v26H178v-27l18-19z" />
+                                <path d="M204 160l9-22h34l12 22" />
+                                <circle cx="202" cy="207" r="10" />
+                                <circle cx="250" cy="207" r="10" />
+                            </g>
+                            <g class="contact-visual-battery">
+                                <rect x="80" y="174" width="74" height="46" rx="6" />
+                                <path d="M98 174v-10h12v10M124 174v-10h12v10" />
+                                <path d="M99 198h15M122 198h15M129 190v16" />
+                            </g>
+                            <circle class="contact-visual-dot" cx="69" cy="86" r="8" />
+                            <circle class="contact-visual-dot" cx="260" cy="125" r="8" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -285,12 +314,23 @@
 
         <!-- Footer -->
         <footer class="site-footer">
-            <div class="container">
-                <p class="footer-business">Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński</p>
-                <p class="footer-meta">NIP: 9541006332 · REGON: 363046529 · Miła 8, 40-464 Katowice (Giszowiec)</p>
+            <div class="container footer-grid">
+                <div>
+                    <p class="footer-kicker">Akumulatory Katowice</p>
+                    <p class="footer-business">Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński</p>
+                    <p class="footer-meta">NIP: 9541006332 · REGON: 363046529<br>Miła 8, 40-464 Katowice (Giszowiec)</p>
+                </div>
+                <div>
+                    <p class="footer-heading">Kontakt</p>
+                    <ul class="footer-list">
+                        <li><a href="tel:+48501436661">501&nbsp;436&nbsp;661</a></li>
+                        <li><a href="mailto:dariusz.cieszynski@wp.pl">dariusz.cieszynski@wp.pl</a></li>
+                    </ul>
+                </div>
                 <div id="prywatnosc" class="privacy-note">
+                    <p class="footer-heading">Statystyki i prywatność</p>
                     <p>Strona uruchamia statystyki odwiedzin dopiero po zgodzie. Korzysta też z linku do Google Maps oraz linków telefonicznych i email. Szczegóły opisuje <a href="./privacy-policy.html">polityka prywatności</a>.</p>
-                    <button class="privacy-settings" type="button" data-analytics-settings>Ustawienia prywatności</button>
+                    <button class="privacy-settings" type="button" data-analytics-settings>Zmień zgodę na statystyki</button>
                 </div>
             </div>
         </footer>
