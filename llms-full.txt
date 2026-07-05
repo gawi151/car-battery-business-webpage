@@ -1,10 +1,10 @@
 ---
 language: "pl"
 company_name: "Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński"
-business_type: "test, dobór i montaż akumulatorów przy aucie"
+business_type: "sprzedaż, test, dobór i montaż akumulatorów przy aucie"
 location: "Katowice i okolice"
 address: "Miła 8, 40-464 Katowice (Giszowiec)"
-services: ["test akumulatora", "dobór akumulatora", "montaż przy aucie", "recykling"]
+services: ["sprzedaż akumulatorów", "test akumulatora", "dobór akumulatora", "montaż przy aucie", "recykling"]
 brands: ["Exide Technologies", "Varta", "Bosch", "Centra"]
 contact_phone: "+48501436661"
 contact_email: "dariusz.cieszynski@wp.pl"
@@ -16,7 +16,7 @@ opening_hours:
   sunday: "09:00 - 15:00"
 ---
 
-# Akumulatory Katowice: Test, Dobór i Montaż Przy Aucie
+# Akumulatory Katowice: Sprzedaż, Dobór i Montaż Przy Aucie
 
 **Zadzwoń, opisz objawy i ustal kolejny krok bez wymiany w ciemno**
 
@@ -24,25 +24,30 @@ opening_hours:
 
 ## Nasze Usługi
 
-### 1. Test Akumulatora
+### 1. Sprzedaż Akumulatorów
+**Sprzedaż po dopasowaniu do auta i budżetu**
+
+- Sprzedaż akumulatorów dobranych do konkretnego auta, wyposażenia i budżetu
+
+### 2. Test Akumulatora
 **Sprawdzenie problemu przed wymianą**
 
 - Sprawdzenie, czy problemem jest akumulator, ładowanie czy sposób użytkowania
 - Diagnoza przed wymianą akumulatora
 
-### 2. Dobór Właściwego Modelu
+### 3. Dobór Właściwego Modelu
 **Dobór do auta, wyposażenia, sposobu jazdy i budżetu**
 
 - Akumulatory do różnych typów pojazdów
 - Marki m.in. Exide Technologies, Varta, Bosch i Centra
 
-### 3. Montaż Przy Aucie
+### 4. Montaż Przy Aucie
 **Montaż po wcześniejszym ustaleniu szczegółów telefonicznie**
 
 - Z dojazdem do klienta
 - Albo po umówieniu przy biurze firmy
 
-### 4. Recykling
+### 5. Recykling
 **Odpowiednie przekazanie zużytego akumulatora**
 
 - Możliwość zostawienia zużytego akumulatora do recyklingu

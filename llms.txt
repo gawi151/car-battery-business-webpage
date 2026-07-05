@@ -1,6 +1,6 @@
 # Akumulatory Katowice - Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
 
-> Test, dobór i montaż akumulatorów przy aucie w Katowicach i okolicach. Zadzwoń, opisz objawy, a firma pomoże ustalić, czy potrzebny jest nowy akumulator, test lub montaż z dojazdem do klienta albo po umówieniu przy biurze.
+> Sprzedaż, dobór, test i montaż akumulatorów przy aucie w Katowicach i okolicach. Zadzwoń, opisz objawy, a firma pomoże ustalić, czy potrzebny jest nowy akumulator, test lub montaż z dojazdem do klienta albo po umówieniu przy biurze.
 
 ## Dane kontaktowe
 
@@ -11,6 +11,10 @@
 - REGON: 363046529
 
 ## Usługi
+
+### Sprzedaż akumulatorów
+
+- Sprzedaż akumulatorów dobranych do konkretnego auta, wyposażenia i budżetu
 
 ### Darmowy test akumulatora
 
