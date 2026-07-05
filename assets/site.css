@@ -632,6 +632,14 @@ button:focus-visible {
   color: var(--color-muted);
 }
 
+.not-found-card .hero-actions {
+  justify-content: center;
+}
+
+.not-found-card .button {
+  min-width: min(100%, 13rem);
+}
+
 .not-found-card .footer-business {
   color: var(--color-navy);
 }
