@@ -1,10 +1,10 @@
 ---
 language: "pl"
 company_name: "Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński"
-business_type: "sprzedaż i montaż akumulatorów"
+business_type: "test, dobór i montaż akumulatorów przy aucie"
 location: "Katowice i okolice"
 address: "Miła 8, 40-464 Katowice (Giszowiec)"
-services: ["sprzedaż", "montaż", "testowanie", "recykling"]
+services: ["test akumulatora", "dobór akumulatora", "montaż przy aucie", "recykling"]
 brands: ["Exide Technologies", "Varta", "Bosch", "Centra"]
 contact_phone: "+48501436661"
 contact_email: "dariusz.cieszynski@wp.pl"
@@ -16,38 +16,36 @@ opening_hours:
   sunday: "09:00 - 15:00"
 ---
 
-# Sprzedaż i Montaż Akumulatorów w Katowicach i Okolicach
+# Akumulatory Katowice: Test, Dobór i Montaż Przy Aucie
 
-**Profesjonalna obsługa i szeroki wybór akumulatorów do każdego pojazdu**
+**Zadzwoń, opisz objawy i ustal kolejny krok bez wymiany w ciemno**
 
 ---
 
 ## Nasze Usługi
 
-### 1. Sprzedaż Akumulatorów
-**Szeroki wybór akumulatorów najlepszych marek**
+### 1. Test Akumulatora
+**Sprawdzenie problemu przed wymianą**
+
+- Sprawdzenie, czy problemem jest akumulator, ładowanie czy sposób użytkowania
+- Diagnoza przed wymianą akumulatora
+
+### 2. Dobór Właściwego Modelu
+**Dobór do auta, wyposażenia, sposobu jazdy i budżetu**
 
 - Akumulatory do różnych typów pojazdów
-- Gwarancja jakości i niezawodności
+- Marki m.in. Exide Technologies, Varta, Bosch i Centra
 
-### 2. Montaż
-**Profesjonalny montaż akumulatorów w każdym pojeździe u klienta lub na miejscu**
+### 3. Montaż Przy Aucie
+**Montaż po wcześniejszym ustaleniu szczegółów telefonicznie**
 
-- Montaż akumulatorów na podtrzymaniu
-- Montaż akumulatorów do pojazdów z systemem Start-Stop
-- Dowóz akumulatorów do klienta pod wskazany adres
-
-### 3. Darmowe Testowanie
-**Sprawdzimy stan Twojego akumulatora za darmo**
-
-- Kompleksowa analiza stanu akumulatora
-- Wskazanie ewentualnych problemów
+- Z dojazdem do klienta
+- Albo po umówieniu przy biurze firmy
 
 ### 4. Recykling
-**Zadbaj o środowisko!**
+**Odpowiednie przekazanie zużytego akumulatora**
 
-- Kupując u nas nowy akumulator, oddajemy stary do recyklingu
-- Odpowiedzialne przetwarzanie starych akumulatorów
+- Możliwość zostawienia zużytego akumulatora do recyklingu
 
 ---
 
@@ -87,6 +85,8 @@ opening_hours:
 - **Email**: [dariusz.cieszynski@wp.pl](mailto:dariusz.cieszynski@wp.pl)
 - **Adres**: Miła 8, 40-464 Katowice (Giszowiec)
 
+Biuro firmy znajduje się przy ul. Miłej 8 w Katowicach-Giszowcu. Montaż i test akumulatora wykonujemy przy aucie: z dojazdem do klienta albo po umówieniu przy biurze.
+
 📍 [Zobacz na mapie Google](https://www.google.com/maps/place/Sprzeda%C5%BC+Art.+Przemys%C5%82owych/@50.2252607,19.0676135,17z)
 
 ### Godziny Otwarcia
@@ -100,9 +100,4 @@ opening_hours:
 
 ## O Nas
 
-Jesteśmy tutaj, aby pomóc Ci:
-- W wyborze najlepszego akumulatora dla Twojego pojazdu
-- Odpowiedzieć na wszystkie Twoje pytania
-- Pomóc w każdej sytuacji
-
-Nie wahaj się z nami skontaktować! Odpowiemy na wszystkie Twoje pytania i pomożemy w każdej sytuacji.
+Firma pomaga ustalić, czy problem rzeczywiście dotyczy akumulatora, dobrać właściwy model i wykonać montaż przy aucie po wcześniejszym kontakcie telefonicznym.
