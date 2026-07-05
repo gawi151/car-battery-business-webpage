@@ -2,12 +2,12 @@
 <html lang="pl">
 
 <head>
-    <title>Akumulatory Katowice - sprzedaż, montaż i testowanie</title>
+    <title>Akumulatory Katowice - test, dobór i montaż przy aucie</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Szukasz akumulatora w Katowicach? Oferujemy sprzedaż, montaż i darmowe testowanie akumulatorów. Zadzwoń: 501 436 661.">
-    <meta name="keywords" content="najlepsze akumulatory Katowice, montaż akumulatorów w Katowicach">
+        content="Akumulator w Katowicach? Zadzwoń, opisz objawy i sprawdź, czy potrzebny jest test, dobór lub montaż akumulatora przy aucie.">
+    <meta name="keywords" content="akumulatory Katowice, test akumulatora, montaż akumulatora Katowice">
     <meta name="language" content="pl">
     <link rel="canonical" href="https://akumulatory-katowice.pl/">
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96">
@@ -15,429 +15,7 @@
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="./assets/output.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-        }
-
-        .hero-title {
-            font-size: clamp(2rem, 9vw, 3rem);
-            line-height: 1.08;
-            text-wrap: balance;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            justify-content: center;
-        }
-
-        .hero-secondary {
-            display: inline-block;
-            border: 1px solid rgba(255, 255, 255, 0.65);
-            color: #fff;
-            font-weight: 700;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.25rem;
-            transition: background-color 300ms, border-color 300ms;
-        }
-
-        .hero-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.12);
-            border-color: #fff;
-        }
-
-        .contact-heading {
-            color: #0f3470;
-            font-size: clamp(2.5rem, 7vw, 4rem);
-            font-weight: 700;
-            line-height: 1.05;
-        }
-
-        .contact-heading::after {
-            content: "";
-            display: block;
-            width: 5.75rem;
-            height: 0.25rem;
-            margin-top: 1.5rem;
-            border-radius: 999px;
-            background-color: #eab308;
-        }
-
-        .contact-lead {
-            max-width: 56rem;
-            margin-top: 1.75rem;
-            color: #1f2937;
-            font-size: 1.125rem;
-            line-height: 1.65;
-        }
-
-        .contact-action-rail {
-            display: grid;
-            margin-top: 3rem;
-            overflow: hidden;
-            border-radius: 0.5rem;
-            background-color: #0f3470;
-            box-shadow: 0 18px 40px -22px rgb(15 52 112 / 0.65);
-        }
-
-        .contact-action {
-            display: flex;
-            min-height: 6.75rem;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.25rem;
-            color: #fff;
-            text-decoration: none;
-            transition: background-color 200ms, transform 200ms;
-        }
-
-        .contact-action + .contact-action {
-            border-top: 1px solid rgba(255, 255, 255, 0.24);
-        }
-
-        .contact-action:hover,
-        .contact-action:focus-visible {
-            background-color: rgba(255, 255, 255, 0.08);
-            transform: translateY(-1px);
-        }
-
-        .contact-action-icon {
-            display: inline-flex;
-            width: 4rem;
-            height: 4rem;
-            flex: 0 0 auto;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid #facc15;
-            border-radius: 999px;
-            color: #facc15;
-        }
-
-        .contact-action-icon svg {
-            width: 2rem;
-            height: 2rem;
-        }
-
-        .contact-action strong {
-            display: block;
-            font-size: 1.35rem;
-            line-height: 1.2;
-        }
-
-        .contact-action-value {
-            display: block;
-            margin-top: 0.25rem;
-            color: #facc15;
-            font-size: clamp(1.2rem, 3vw, 1.65rem);
-            font-weight: 700;
-            line-height: 1.2;
-            overflow-wrap: anywhere;
-        }
-
-        .contact-action-email .contact-action-value {
-            font-size: clamp(1rem, 1.75vw, 1.25rem);
-        }
-
-        .contact-action-note {
-            display: block;
-            margin-top: 0.5rem;
-            color: #eff6ff;
-            font-size: 1rem;
-            line-height: 1.4;
-        }
-
-        .location-panel {
-            display: grid;
-            gap: 2rem;
-            margin-top: 0;
-            padding: 2rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0 0 0.5rem 0.5rem;
-            background-color: #fff;
-            box-shadow: 0 18px 40px -28px rgb(15 52 112 / 0.32);
-        }
-
-        .location-content {
-            display: grid;
-            gap: 1.75rem;
-            align-content: center;
-        }
-
-        .location-address {
-            display: grid;
-            grid-template-columns: auto minmax(0, 1fr);
-            gap: 1.25rem;
-            align-items: center;
-            color: #0f3470;
-        }
-
-        .location-address-icon,
-        .location-hours-icon {
-            color: #0f3470;
-        }
-
-        .location-address-icon svg {
-            width: 3.25rem;
-            height: 3.25rem;
-        }
-
-        .location-address h3 {
-            margin: 0;
-            font-size: clamp(1.8rem, 5vw, 2.6rem);
-            font-weight: 700;
-            line-height: 1.12;
-        }
-
-        .location-address h3::after {
-            content: "";
-            display: block;
-            width: 5.75rem;
-            height: 0.25rem;
-            margin-top: 1.25rem;
-            border-radius: 999px;
-            background-color: #eab308;
-        }
-
-        .location-hours {
-            display: grid;
-            grid-template-columns: auto minmax(0, 1fr);
-            gap: 1.25rem;
-            align-items: start;
-            color: #1f2937;
-            font-size: 1.0625rem;
-            line-height: 1.65;
-        }
-
-        .location-hours-icon svg {
-            width: 2.25rem;
-            height: 2.25rem;
-        }
-
-        .directions-button {
-            display: inline-flex;
-            width: 100%;
-            max-width: 23.5rem;
-            min-height: 4.5rem;
-            align-items: center;
-            justify-content: center;
-            gap: 0.85rem;
-            border-radius: 0.5rem;
-            background-color: #eab308;
-            color: #0f3470;
-            font-size: 1.25rem;
-            font-weight: 700;
-            text-decoration: none;
-            transition: background-color 200ms, transform 200ms, box-shadow 200ms;
-        }
-
-        .directions-button:hover,
-        .directions-button:focus-visible {
-            background-color: #facc15;
-            box-shadow: 0 18px 24px -18px rgb(15 52 112 / 0.5);
-            transform: translateY(-1px);
-        }
-
-        .directions-button svg {
-            width: 1.75rem;
-            height: 1.75rem;
-        }
-
-        .privacy-hint {
-            color: #4b5563;
-            font-size: 0.9375rem;
-            line-height: 1.55;
-        }
-
-        .location-illustration {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 16rem;
-        }
-
-        .location-illustration img {
-            width: min(100%, 36rem);
-            height: auto;
-        }
-
-        .brand-logo {
-            max-width: 100%;
-            width: auto;
-        }
-
-        .footer-meta,
-        .privacy-note {
-            color: #e5e7eb;
-        }
-
-        .footer-meta a,
-        .privacy-note a {
-            color: #fff;
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
-
-        .privacy-settings {
-            margin: 0.25rem 0 0;
-            padding: 0;
-            border: 0;
-            background: transparent;
-            color: #fff;
-            cursor: pointer;
-            font: inherit;
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
-
-        .privacy-settings:hover,
-        .privacy-settings:focus-visible {
-            color: #facc15;
-        }
-
-        .analytics-consent {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 50;
-            padding: 0.875rem 1rem;
-            border-top: 3px solid #eab308;
-            background-color: #fff;
-            color: #1f2937;
-            box-shadow: 0 -12px 24px -20px rgb(15 52 112 / 0.45);
-        }
-
-        .analytics-consent[hidden] {
-            display: none;
-        }
-
-        .analytics-consent__inner {
-            display: flex;
-            max-width: 72rem;
-            flex-direction: column;
-            gap: 0.75rem;
-            margin: 0 auto;
-        }
-
-        .analytics-consent p {
-            margin: 0;
-            font-size: 0.9375rem;
-            line-height: 1.5;
-        }
-
-        .analytics-consent a {
-            color: #1e3a8a;
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
-
-        .analytics-consent__actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .analytics-consent button {
-            min-height: 2.5rem;
-            cursor: pointer;
-            border: 1px solid #1e3a8a;
-            border-radius: 0.375rem;
-            padding: 0.55rem 0.85rem;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .analytics-consent__reject {
-            background-color: #fff;
-            color: #1e3a8a;
-        }
-
-        .analytics-consent__accept {
-            border-color: #eab308;
-            background-color: #eab308;
-            color: #0f3470;
-        }
-
-        .analytics-consent__reject:hover,
-        .analytics-consent__reject:focus-visible {
-            border-color: #eab308;
-            background-color: #f8fafc;
-        }
-
-        .analytics-consent__accept:hover,
-        .analytics-consent__accept:focus-visible {
-            border-color: #facc15;
-            background-color: #facc15;
-        }
-
-        @media (min-width: 768px) {
-            .hero-actions {
-                justify-content: flex-start;
-            }
-
-            .contact-action-rail {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-
-            .contact-action + .contact-action {
-                border-top: 0;
-                border-left: 1px solid rgba(255, 255, 255, 0.24);
-            }
-
-            .analytics-consent__inner {
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            .analytics-consent p {
-                max-width: 52rem;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .location-panel {
-                grid-template-columns: minmax(25rem, 0.95fr) minmax(28rem, 1.05fr);
-                padding: 3rem 4rem;
-            }
-        }
-
-        @media (min-width: 1440px) {
-            .contact-action {
-                min-height: 8.75rem;
-                gap: 1.5rem;
-                padding: 1.75rem 2rem;
-            }
-
-            .contact-action-icon {
-                width: 5rem;
-                height: 5rem;
-            }
-
-            .contact-action-icon svg {
-                width: 2.35rem;
-                height: 2.35rem;
-            }
-
-            .contact-action strong {
-                font-size: 1.625rem;
-            }
-
-            .contact-action-value {
-                font-size: clamp(1.25rem, 3vw, 1.85rem);
-            }
-
-            .contact-action-email .contact-action-value {
-                font-size: clamp(1.1rem, 1.75vw, 1.65rem);
-            }
-        }
-    </style>
+    <link href="./assets/site.css" rel="stylesheet">
     <script type="application/ld+json">
         [
           {
@@ -445,10 +23,10 @@
               "@type": "WebPage",
               "@id": "https://akumulatory-katowice.pl/#webpage",
               "url": "https://akumulatory-katowice.pl/",
-              "name": "Akumulatory Katowice - Sprzedaż, montaż i darmowe testowanie",
-              "description": "Sprzedaż, montaż i darmowe testowanie akumulatorów w Katowicach i okolicach.",
-              "specialty": "Akumulatory Katowice - Sprzedaż, Montaż i Darmowe Testowanie",
-              "primaryImageOfPage": "https://akumulatory-katowice.pl/assets/hero.webp",
+              "name": "Akumulatory Katowice - test, dobór i montaż przy aucie",
+              "description": "Test, dobór i montaż akumulatorów przy aucie w Katowicach i okolicach.",
+              "specialty": "Akumulatory Katowice - test, dobór i montaż przy aucie",
+              "primaryImageOfPage": "https://akumulatory-katowice.pl/assets/hero-battery-diagnosis-1280.webp",
               "mainEntity": {
                 "@id": "https://akumulatory-katowice.pl/#localbusiness"
               }
@@ -460,9 +38,9 @@
             "name": "Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński",
             "alternateName": [
               "Akumulatory Katowice",
-              "Sprzedaż i montaż akumulatorów"
+              "Test i montaż akumulatorów przy aucie"
             ],
-            "description": "Sprzedaż, montaż, dowóz i darmowe testowanie akumulatorów w Katowicach i okolicach.",
+            "description": "Test, dobór i montaż akumulatorów przy aucie w Katowicach i okolicach.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Miła 8",
@@ -481,7 +59,7 @@
             "url": "https://akumulatory-katowice.pl",
             "hasMap": "https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice",
             "priceRange": "$",
-            "image": "https://akumulatory-katowice.pl/assets/hero.webp",
+            "image": "https://akumulatory-katowice.pl/assets/hero-battery-diagnosis-1280.webp",
             "areaServed": "Katowice i okolice",
             "currenciesAccepted": "PLN",
             "taxID": "9541006332",
