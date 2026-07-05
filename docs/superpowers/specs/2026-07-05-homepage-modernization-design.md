@@ -8,6 +8,24 @@ Modernize the homepage outside the already-refined contact/directions block so t
 
 The selected direction is based on the original `Fast Help` concept, but softened to avoid implying a 24/7 emergency battery service. The page should make urgent visitors feel they can get a clear answer, while protecting the reputation of an owner-run business by not promising instant rescue or workshop-style service.
 
+## Concept Lineage
+
+The original visual exploration included three full-page directions:
+
+- `Fast Help`: dark, action-oriented, focused on a visitor whose car may not start.
+- `Local Expert`: calmer, more advisory, focused on trust and practical experience.
+- `Clean Product Guide`: more catalog-like, focused on battery categories and product scanning.
+
+The selected base was `Fast Help`, but the final direction is not an emergency-service concept. The durable interpretation of that choice is:
+
+- Keep the strong visual hierarchy and visible phone CTA from `Fast Help`.
+- Replace urgent rescue wording with diagnosis-first wording.
+- Use medium blue for the hero instead of full dark navy, so the first screen feels important but not alarmist.
+- Reserve dark navy mostly for real action/contact areas.
+- Explain that testing and mounting happen at the car, not in a public workshop.
+
+Brainstorm mockups were temporary review artifacts and are ignored from Git. This spec is the source of truth for future agents.
+
 ## Positioning
 
 Primary positioning:
@@ -192,6 +210,34 @@ Do not repeat the `Jak działamy` steps in the contact section.
 
 Keep the existing business/legal information and privacy controls. Update visual styling only as needed to match the modernized page.
 
+## Related Pages
+
+The visual modernization applies to the supporting static pages too:
+
+### 404 Page
+
+Update `404.html` so it feels like the same business and visual system as the modernized homepage.
+
+Requirements:
+
+- Use the same medium-blue/navy/yellow system.
+- Use the same heading scale, underline treatment, button styling, and footer treatment.
+- Provide a clear route back to the homepage.
+- Include a lightweight contact option if useful, but do not turn the 404 page into another full sales page.
+- Do not introduce workshop, emergency-service, or guaranteed response-time language.
+
+### Privacy Policy
+
+Update `privacy-policy.html` visually so it no longer feels older than the homepage.
+
+Requirements:
+
+- Keep the legal/privacy content intact unless a specific content correction is needed.
+- Use the same typography, page background, header treatment, footer treatment, and link styling as the modernized site.
+- Keep the content highly readable; this page should not become visually heavy or marketing-like.
+- Preserve the privacy settings button and consent-related wording.
+- Keep contact/help placement consistent with the homepage where repeated contact information appears.
+
 ## Implementation Notes
 
 - Keep the site static and continue using the existing asset set.
@@ -200,6 +246,11 @@ Keep the existing business/legal information and privacy controls. Update visual
 - Update metadata only if the final visible copy materially changes page positioning.
 - Preserve phone and email tracking attributes where existing analytics events are already present.
 - Ensure mobile layout keeps phone CTA, `Jak działamy`, and contact actions easy to scan.
+- Review the CSS strategy instead of blindly keeping or removing Tailwind.
+- Current `assets/output.css` is about 32 KB uncompressed, so Tailwind is not an obvious page-weight emergency by itself.
+- If the implementation becomes mostly custom section CSS, replace Tailwind utilities with a small hand-authored stylesheet and remove unused Tailwind output.
+- If Tailwind utilities remain the fastest maintainable path, keep generated CSS small, purged, and shared consistently across `index.html`, `404.html`, and `privacy-policy.html`.
+- Avoid duplicating large inline style blocks across pages; prefer shared CSS for the common visual system.
 
 ## Verification
 
@@ -211,3 +262,15 @@ Before implementation is accepted:
 - Confirm hero CTA phone number is visible above the fold.
 - Confirm secondary CTA scrolls to `Jak działamy`.
 - Confirm contact section contains phone, email, office address, hours, and the office clarification copy.
+- Confirm `404.html` and `privacy-policy.html` visually match the modernized homepage system.
+- Run an accessibility audit with Lighthouse or axe where available.
+- Manually verify keyboard navigation, visible focus states, semantic headings, link purpose, target sizes, and 200% zoom.
+- Check color contrast for medium-blue hero text, yellow CTA text, navy rails, and footer links.
+- Confirm decorative images/icons use empty alt text and meaningful images have useful alt text.
+- Run a performance audit with Lighthouse where available.
+- Check page weight for `index.html`, `404.html`, `privacy-policy.html`, CSS, fonts, scripts, and images.
+- Keep CSS transfer small; if CSS grows materially beyond the current `assets/output.css` baseline, justify it or reduce it.
+- Ensure the LCP image is correctly sized, uses explicit dimensions, and keeps high fetch priority only when above the fold.
+- Ensure below-fold product/brand/contact images remain lazy-loaded with explicit dimensions.
+- Confirm there are no console errors, broken local asset links, or unexpected layout shifts.
+- Confirm analytics consent behavior still works and no analytics loads before consent.
