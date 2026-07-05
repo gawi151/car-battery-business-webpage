@@ -224,7 +224,6 @@ button:focus-visible {
   background: var(--color-white);
 }
 
-.steps-grid,
 .services-grid,
 .battery-grid {
   display: grid;
@@ -232,7 +231,6 @@ button:focus-visible {
   margin-top: 2rem;
 }
 
-.step-card,
 .service-card,
 .battery-card,
 .policy-card,
@@ -243,22 +241,42 @@ button:focus-visible {
   box-shadow: none;
 }
 
-.step-card,
 .service-card,
 .battery-card {
   padding: 1.35rem;
 }
 
-.step-number {
-  display: inline-flex;
-  width: 2.25rem;
-  height: 2.25rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: var(--color-navy);
-  color: var(--color-yellow);
+.process-list {
+  display: grid;
+  gap: 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.process-step {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.process-number {
+  color: var(--color-navy);
+  font-size: 1.8rem;
   font-weight: 900;
+  line-height: 1;
+}
+
+.process-step h3 {
+  margin: 0;
+  color: var(--color-navy);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.process-step p {
+  margin: 0.45rem 0 0;
+  color: var(--color-muted);
 }
 
 .card-title {
@@ -421,29 +439,26 @@ button:focus-visible {
   font-size: 0.95rem;
 }
 
-.contact-support {
+.contact-panel {
   display: grid;
   gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.location-panel {
-  display: grid;
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-.location-content {
-  padding: clamp(1.25rem, 3vw, 1.75rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-top: 0;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
   background: var(--color-white);
 }
 
-.location-content h3 {
+.contact-panel-copy h3 {
   margin: 0;
   color: var(--color-navy);
-  font-size: 1.25rem;
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+  line-height: 1.18;
+}
+
+.contact-panel-copy p {
+  margin: 0.8rem 0 0;
+  color: var(--color-muted);
 }
 
 .location-hours,
@@ -483,13 +498,11 @@ button:focus-visible {
 
 .contact-visual {
   display: grid;
-  min-height: 18rem;
+  min-height: 17rem;
   align-items: center;
   justify-items: center;
-  padding: 1.25rem;
-  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  background: var(--color-white);
+  background: var(--color-blue-soft);
 }
 
 .contact-visual svg {
@@ -784,9 +797,13 @@ button:focus-visible {
   }
 
   .trust-list,
-  .steps-grid,
   .battery-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .process-step {
+    grid-template-columns: 4.2rem minmax(0, 1fr);
+    align-items: start;
   }
 
   .services-grid {
@@ -802,12 +819,9 @@ button:focus-visible {
     border-left: 1px solid rgb(255 255 255 / 0.24);
   }
 
-  .location-panel {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .contact-support {
-    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.4fr);
+  .contact-panel {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.52fr);
+    align-items: center;
   }
 
   .analytics-consent__inner {
