@@ -1,10 +1,12 @@
 ---
 language: "pl"
+canonical_url: "https://akumulatory-katowice.pl/"
+llms_txt_url: "https://akumulatory-katowice.pl/llms.txt"
 company_name: "Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński"
-business_type: "sprzedaż, test, dobór i montaż akumulatorów przy aucie"
-location: "Katowice i okolice"
+business_type: "sprzedaż, darmowy test, dobór i montaż akumulatorów przy samochodzie"
+location: "Katowice-Giszowiec i okolice po potwierdzeniu telefonicznym"
 address: "Miła 8, 40-464 Katowice (Giszowiec)"
-services: ["sprzedaż akumulatorów", "test akumulatora", "dobór akumulatora", "montaż przy aucie", "recykling"]
+services: ["sprzedaż akumulatorów", "darmowy test akumulatora", "dobór akumulatora", "montaż przy samochodzie", "recykling"]
 brands: ["Exide Technologies", "Varta", "Bosch", "Centra"]
 contact_phone: "+48501436661"
 contact_email: "dariusz.cieszynski@wp.pl"
@@ -16,93 +18,91 @@ opening_hours:
   sunday: "09:00 - 15:00"
 ---
 
-# Akumulatory Katowice: Sprzedaż, Dobór i Montaż Przy Aucie
+# Akumulatory Katowice: test, sprzedaż i montaż przy samochodzie
 
-**Zadzwoń, opisz objawy i ustal kolejny krok bez wymiany w ciemno**
+Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński pomaga dobrać, sprawdzić i zamontować akumulator w Katowicach. Obsługa zaczyna się od kontaktu telefonicznego: klient opisuje objawy, a firma ustala, czy potrzebny jest test, dobór nowego akumulatora albo montaż przy samochodzie.
 
----
+## Najważniejsze strony
 
-## Nasze Usługi
+- [Strona główna](https://akumulatory-katowice.pl/)
+- [Skrócony plik llms.txt](https://akumulatory-katowice.pl/llms.txt)
+- [Polityka prywatności](https://akumulatory-katowice.pl/privacy-policy.html)
 
-### 1. Sprzedaż Akumulatorów
-**Sprzedaż po dopasowaniu do auta i budżetu**
+## Sposób obsługi
 
-- Sprzedaż akumulatorów dobranych do konkretnego auta, wyposażenia i budżetu
+1. Klient dzwoni pod numer +48 501 436 661 i opisuje objawy.
+2. Firma ustala, czy zaczynać od testu akumulatora, doboru nowego modelu czy montażu.
+3. Test i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
+4. Adres Miła 8 w Katowicach-Giszowcu jest adresem biura firmy, a nie osobnym warsztatem.
 
-### 2. Test Akumulatora
-**Sprawdzenie problemu przed wymianą**
+## Usługi
 
-- Sprawdzenie, czy problemem jest akumulator, ładowanie czy sposób użytkowania
-- Diagnoza przed wymianą akumulatora
+### Sprzedaż akumulatorów
 
-### 3. Dobór Właściwego Modelu
-**Dobór do auta, wyposażenia, sposobu jazdy i budżetu**
+Sprzedaż obejmuje akumulatory dobierane do konkretnego auta, wyposażenia, sposobu jazdy i budżetu.
 
-- Akumulatory do różnych typów pojazdów
-- Marki m.in. Exide Technologies, Varta, Bosch i Centra
+### Darmowy test akumulatora
 
-### 4. Montaż Przy Aucie
-**Montaż po wcześniejszym ustaleniu szczegółów telefonicznie**
+Firma informuje o darmowym teście akumulatora. Test ma pomóc ustalić przed wymianą, czy problemem jest sam akumulator, ładowanie czy sposób użytkowania. Szczegóły testu, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie.
 
-- Z dojazdem do klienta
-- Albo po umówieniu przy biurze firmy
+### Dobór właściwego akumulatora
 
-### 5. Recykling
-**Odpowiednie przekazanie zużytego akumulatora**
+Dobór uwzględnia auto, wyposażenie, sposób jazdy i budżet. Dostępne marki obejmują m.in. Exide Technologies, Varta, Bosch i Centra.
 
-- Możliwość zostawienia zużytego akumulatora do recyklingu
+### Montaż przy samochodzie
 
----
+Montaż akumulatora odbywa się po wcześniejszym ustaleniu szczegółów telefonicznie. Usługa może być wykonana z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
 
-## Współpraca z Markami
+### Odbiór starego akumulatora
 
-**Współpracujemy z najlepszymi:**
+Zużyty akumulator można zostawić do odpowiedniego recyklingu.
+
+## Rodzaje akumulatorów
+
+- Akumulatory samochodowe: do aut osobowych, dostawczych i systemów Start-Stop.
+- Akumulatory motocyklowe: na sezon, do regularnej jazdy i pewnego rozruchu.
+- Akumulatory trakcyjne: do pracy, maszyn, wózków i zastosowań specjalnych.
+
+## Marki
+
 - Exide Technologies
 - Varta
 - Bosch
 - Centra
+- Inne renomowane marki akumulatorów
 
-*Oferujemy wiele innych renomowanych marek.*
+## Dane firmy
 
----
+Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
 
-## Rodzaje Akumulatorów
-
-- **Akumulatory Samochodowe**
-- **Akumulatory Motocyklowe**
-- **Akumulatory Trakcyjne**
-
----
-
-## Dane Firmy
-
-**Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński**
-
-- **NIP**: 9541006332
-- **REGON**: 363046529
-
----
+- NIP: 9541006332
+- REGON: 363046529
+- Adres biura: Miła 8, 40-464 Katowice (Giszowiec)
 
 ## Kontakt
 
-### Dane Kontaktowe
-- **Telefon**: [+48 501 436 661](tel:+48501436661)
-- **Email**: [dariusz.cieszynski@wp.pl](mailto:dariusz.cieszynski@wp.pl)
-- **Adres**: Miła 8, 40-464 Katowice (Giszowiec)
+- Telefon: [+48 501 436 661](tel:+48501436661)
+- Email: [dariusz.cieszynski@wp.pl](mailto:dariusz.cieszynski@wp.pl)
+- Trasa do biura: [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice)
 
-Biuro firmy znajduje się przy ul. Miłej 8 w Katowicach-Giszowcu. Montaż i test akumulatora wykonujemy przy aucie: z dojazdem do klienta albo po umówieniu przy biurze.
+## Godziny
 
-📍 [Zobacz na mapie Google](https://www.google.com/maps/place/Sprzeda%C5%BC+Art.+Przemys%C5%82owych/@50.2252607,19.0676135,17z)
-
-### Godziny Otwarcia
 | Dzień | Godziny |
 |-------|---------|
 | Poniedziałek - Piątek | 09:00 - 21:00 |
 | Sobota | 09:00 - 20:00 |
 | Niedziela | 09:00 - 15:00 |
 
----
+## Najczęstsze pytania
 
-## O Nas
+### Czy test akumulatora jest darmowy?
 
-Firma pomaga ustalić, czy problem rzeczywiście dotyczy akumulatora, dobrać właściwy model i wykonać montaż przy aucie po wcześniejszym kontakcie telefonicznym.
+Tak, strona informuje o darmowym teście akumulatora. Szczegóły usługi, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie przed przyjazdem.
+
+### Czy montaż akumulatora jest z dojazdem?
+
+Test i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
+
+### Czy adres Miła 8 to warsztat?
+
+Nie. Miła 8 w Katowicach-Giszowcu to adres biura firmy, nie osobny warsztat. Przed przyjazdem trzeba zadzwonić i potwierdzić szczegóły.

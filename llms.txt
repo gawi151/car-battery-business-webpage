@@ -1,39 +1,52 @@
 # Akumulatory Katowice - Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
 
-> Sprzedaż, dobór, test i montaż akumulatorów przy aucie w Katowicach i okolicach. Zadzwoń, opisz objawy, a firma pomoże ustalić, czy potrzebny jest nowy akumulator, test lub montaż z dojazdem do klienta albo po umówieniu przy biurze.
+> Akumulatory w Katowicach: sprzedaż, dobór, darmowy test i montaż przy samochodzie. Obsługa Katowic-Giszowca i okolic po kontakcie telefonicznym.
+
+## Najważniejsze strony
+
+- [Strona główna](https://akumulatory-katowice.pl/)
+- [Pełny opis usług dla LLM](https://akumulatory-katowice.pl/llms-full.txt)
+- [Polityka prywatności](https://akumulatory-katowice.pl/privacy-policy.html)
 
 ## Dane kontaktowe
 
-- Email: dariusz.cieszynski@wp.pl
 - Telefon: +48 501 436 661
-- Adres: Miła 8, 40-464 Katowice (Giszowiec)
+- Email: dariusz.cieszynski@wp.pl
+- Adres biura: Miła 8, 40-464 Katowice (Giszowiec)
 - NIP: 9541006332
 - REGON: 363046529
+
+## Sposób obsługi
+
+- Najpierw kontakt telefoniczny i opis objawów.
+- Test i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze po wcześniejszym umówieniu.
+- Adres Miła 8 to adres biura firmy, nie osobny warsztat.
+- Obszar obsługi: Katowice-Giszowiec i okolice po potwierdzeniu telefonicznym.
 
 ## Usługi
 
 ### Sprzedaż akumulatorów
 
-- Sprzedaż akumulatorów dobranych do konkretnego auta, wyposażenia i budżetu
+- Sprzedaż akumulatorów dobranych do konkretnego auta, wyposażenia, stylu jazdy i budżetu.
 
 ### Darmowy test akumulatora
 
-- Sprawdzenie, czy problemem jest akumulator, ładowanie czy sposób użytkowania
-- Diagnoza przed wymianą akumulatora
+- Sprawdzenie przed wymianą, czy problemem jest akumulator, ładowanie czy sposób użytkowania.
+- Szczegóły testu, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie.
 
-### Dobór właściwego modelu
+### Dobór właściwego akumulatora
 
-- Dobór do auta, wyposażenia, sposobu jazdy i budżetu
-- Marki m.in. Exide Technologies, Varta, Bosch i Centra
+- Dobór do auta, wyposażenia, sposobu jazdy i budżetu.
+- Marki m.in. Exide Technologies, Varta, Bosch i Centra.
 
-### Montaż przy aucie
+### Montaż przy samochodzie
 
-- Montaż po wcześniejszym ustaleniu szczegółów telefonicznie
-- Z dojazdem do klienta albo po umówieniu przy biurze firmy
+- Montaż po wcześniejszym ustaleniu szczegółów telefonicznie.
+- Z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
 
 ### Recykling
 
-- Możliwość zostawienia zużytego akumulatora do odpowiedniego recyklingu
+- Możliwość zostawienia zużytego akumulatora do odpowiedniego recyklingu.
 
 ## Rodzaje akumulatorów
 
