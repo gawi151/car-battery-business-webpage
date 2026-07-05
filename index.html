@@ -281,6 +281,101 @@
             text-underline-offset: 2px;
         }
 
+        .privacy-settings {
+            margin: 0.25rem 0 0;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .privacy-settings:hover,
+        .privacy-settings:focus-visible {
+            color: #facc15;
+        }
+
+        .analytics-consent {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 50;
+            padding: 0.875rem 1rem;
+            border-top: 3px solid #eab308;
+            background-color: #fff;
+            color: #1f2937;
+            box-shadow: 0 -12px 24px -20px rgb(15 52 112 / 0.45);
+        }
+
+        .analytics-consent[hidden] {
+            display: none;
+        }
+
+        .analytics-consent__inner {
+            display: flex;
+            max-width: 72rem;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin: 0 auto;
+        }
+
+        .analytics-consent p {
+            margin: 0;
+            font-size: 0.9375rem;
+            line-height: 1.5;
+        }
+
+        .analytics-consent a {
+            color: #1e3a8a;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .analytics-consent__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .analytics-consent button {
+            min-height: 2.5rem;
+            cursor: pointer;
+            border: 1px solid #1e3a8a;
+            border-radius: 0.375rem;
+            padding: 0.55rem 0.85rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .analytics-consent__reject {
+            background-color: #fff;
+            color: #1e3a8a;
+        }
+
+        .analytics-consent__accept {
+            border-color: #eab308;
+            background-color: #eab308;
+            color: #0f3470;
+        }
+
+        .analytics-consent__reject:hover,
+        .analytics-consent__reject:focus-visible {
+            border-color: #eab308;
+            background-color: #f8fafc;
+        }
+
+        .analytics-consent__accept:hover,
+        .analytics-consent__accept:focus-visible {
+            border-color: #facc15;
+            background-color: #facc15;
+        }
+
         @media (min-width: 768px) {
             .hero-actions {
                 justify-content: flex-start;
@@ -293,6 +388,16 @@
             .contact-action + .contact-action {
                 border-top: 0;
                 border-left: 1px solid rgba(255, 255, 255, 0.24);
+            }
+
+            .analytics-consent__inner {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .analytics-consent p {
+                max-width: 52rem;
             }
         }
 
@@ -410,8 +515,6 @@
           }
         ]
         </script>
-    <script defer src="https://cloud.umami.is/script.js"
-        data-website-id="0304e7de-a321-4985-9ac1-b251be5c31c3"></script>
 </head>
 
 <body class="bg-gray-100">
@@ -687,11 +790,119 @@
                 </p>
             </div>
             <div id="prywatnosc" class="privacy-note text-xs mt-4 px-6">
-                <p>Informacja o prywatności: strona zawiera linki telefoniczne i email oraz korzysta ze statystyk
-                    odwiedzin Umami. Pełna treść polityki prywatności wymaga weryfikacji prawnej przed publikacją.</p>
+                <p>Strona uruchamia statystyki odwiedzin dopiero po zgodzie. Korzysta też z Google Fonts,
+                    linku do Google Maps oraz linków telefonicznych i email.
+                    Szczegóły opisuje <a href="./privacy-policy.html">polityka prywatności</a>.</p>
+                <button class="privacy-settings" type="button" data-analytics-settings>Ustawienia prywatności</button>
             </div>
         </footer>
     </main>
+
+    <section id="analytics-consent" class="analytics-consent" aria-label="Zgoda na statystyki" hidden>
+        <div class="analytics-consent__inner">
+            <p>Pomóż nam sprawdzić, czy strona jest przydatna. Za zgodą uruchomimy anonimowe statystyki odwiedzin bez reklam i profilowania.
+                <a href="./privacy-policy.html">Polityka prywatności</a></p>
+            <div class="analytics-consent__actions">
+                <button class="analytics-consent__reject" type="button" data-analytics-reject>Odrzuć</button>
+                <button class="analytics-consent__accept" type="button" data-analytics-accept>Akceptuję statystyki</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            var storageKey = "akumulatory_analytics_consent";
+            var acceptedValue = "accepted";
+            var rejectedValue = "rejected";
+            var umamiScriptSrc = "https://cloud.umami.is/script.js";
+            var umamiWebsiteId = "0304e7de-a321-4985-9ac1-b251be5c31c3";
+            var banner = document.getElementById("analytics-consent");
+            var acceptButton = document.querySelector("[data-analytics-accept]");
+            var rejectButton = document.querySelector("[data-analytics-reject]");
+            var settingsButtons = document.querySelectorAll("[data-analytics-settings]");
+
+            function getPreference() {
+                try {
+                    return window.localStorage.getItem(storageKey);
+                } catch (error) {
+                    return null;
+                }
+            }
+
+            function setPreference(value) {
+                try {
+                    window.localStorage.setItem(storageKey, value);
+                } catch (error) {
+                    return false;
+                }
+
+                return true;
+            }
+
+            function hasUmamiLoaded() {
+                return Boolean(document.querySelector('script[src="' + umamiScriptSrc + '"]'));
+            }
+
+            function loadUmami() {
+                if (hasUmamiLoaded()) {
+                    return;
+                }
+
+                var script = document.createElement("script");
+                script.defer = true;
+                script.src = umamiScriptSrc;
+                script.setAttribute("data-website-id", umamiWebsiteId);
+                script.setAttribute("data-analytics-umami", "true");
+                document.head.appendChild(script);
+            }
+
+            function showBanner() {
+                if (banner) {
+                    banner.hidden = false;
+                }
+            }
+
+            function hideBanner() {
+                if (banner) {
+                    banner.hidden = true;
+                }
+            }
+
+            function acceptAnalytics() {
+                setPreference(acceptedValue);
+                hideBanner();
+                loadUmami();
+            }
+
+            function rejectAnalytics() {
+                var hadLoadedUmami = hasUmamiLoaded();
+                setPreference(rejectedValue);
+                hideBanner();
+
+                if (hadLoadedUmami) {
+                    window.location.reload();
+                }
+            }
+
+            if (acceptButton) {
+                acceptButton.addEventListener("click", acceptAnalytics);
+            }
+
+            if (rejectButton) {
+                rejectButton.addEventListener("click", rejectAnalytics);
+            }
+
+            settingsButtons.forEach(function (button) {
+                button.addEventListener("click", showBanner);
+            });
+
+            if (getPreference() === acceptedValue) {
+                loadUmami();
+            } else if (getPreference() !== rejectedValue) {
+                showBanner();
+            }
+        }());
+    </script>
 </body>
 
 </html>
