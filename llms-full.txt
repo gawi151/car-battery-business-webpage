@@ -3,24 +3,24 @@ language: "pl"
 canonical_url: "https://akumulatory-katowice.pl/"
 llms_txt_url: "https://akumulatory-katowice.pl/llms.txt"
 company_name: "Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński"
-business_type: "sprzedaż, darmowy test, dobór i montaż akumulatorów przy samochodzie"
+business_type: "wymiana, sprzedaż, darmowy test, dobór i montaż akumulatorów przy samochodzie"
 location: "Katowice-Giszowiec i okolice po potwierdzeniu telefonicznym"
 address: "Miła 8, 40-464 Katowice (Giszowiec)"
-services: ["sprzedaż akumulatorów", "darmowy test akumulatora", "dobór akumulatora", "montaż przy samochodzie", "recykling"]
+services: ["wymiana akumulatora z dojazdem", "sprzedaż akumulatorów", "darmowy test akumulatora", "dobór akumulatora", "montaż przy samochodzie", "recykling"]
 brands: ["Exide Technologies", "Varta", "Bosch", "Centra"]
 contact_phone: "+48501436661"
 contact_email: "dariusz.cieszynski@wp.pl"
 nip: "PL9541006332"
 regon: "363046529"
-opening_hours:
+contact_phone_hours_not_verified_as_opening_or_service_hours:
   monday_friday: "09:00 - 21:00"
   saturday: "09:00 - 20:00"
   sunday: "09:00 - 15:00"
 ---
 
-# Akumulatory Katowice: test, sprzedaż i montaż przy samochodzie
+# Wymiana akumulatora Katowice: test, sprzedaż i montaż przy samochodzie
 
-Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński pomaga dobrać, sprawdzić i zamontować akumulator w Katowicach. Obsługa zaczyna się od kontaktu telefonicznego: klient opisuje objawy, a firma ustala, czy potrzebny jest test, dobór nowego akumulatora albo montaż przy samochodzie.
+Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński pomaga dobrać, sprawdzić, wymienić i zamontować akumulator w Katowicach. Obsługa zaczyna się od kontaktu telefonicznego: klient opisuje objawy, a firma ustala, czy potrzebny jest test, dobór nowego akumulatora albo wymiana przy samochodzie.
 
 ## Najważniejsze strony
 
@@ -31,8 +31,8 @@ Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński pomaga dobrać, sprawdz
 ## Sposób obsługi
 
 1. Klient dzwoni pod numer +48 501 436 661 i opisuje objawy.
-2. Firma ustala, czy zaczynać od testu akumulatora, doboru nowego modelu czy montażu.
-3. Test i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
+2. Firma ustala, czy zaczynać od testu akumulatora, doboru nowego modelu czy wymiany.
+3. Test, wymiana i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
 4. Adres Miła 8 w Katowicach-Giszowcu jest adresem biura firmy, a nie osobnym warsztatem.
 
 ## Usługi
@@ -45,13 +45,17 @@ Sprzedaż obejmuje akumulatory dobierane do konkretnego auta, wyposażenia, spos
 
 Firma informuje o darmowym teście akumulatora. Test ma pomóc ustalić przed wymianą, czy problemem jest sam akumulator, ładowanie czy sposób użytkowania. Szczegóły testu, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie.
 
+### Wymiana akumulatora z dojazdem
+
+Wymiana akumulatora odbywa się po wcześniejszym ustaleniu szczegółów telefonicznie. Usługa może być wykonana z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu. Biuro przy Miłej 8 nie jest osobnym warsztatem, dlatego przed przyjazdem trzeba potwierdzić termin.
+
 ### Dobór właściwego akumulatora
 
-Dobór uwzględnia auto, wyposażenie, sposób jazdy i budżet. Dostępne marki obejmują m.in. Exide Technologies, Varta, Bosch i Centra.
+Dobór uwzględnia auto, wyposażenie, sposób jazdy i budżet. Przed telefonem warto przygotować markę i model auta, rocznik, silnik, objawy problemu oraz, jeśli to możliwe, parametry obecnego akumulatora. Dostępne marki obejmują m.in. Exide Technologies, Varta, Bosch i Centra.
 
 ### Montaż przy samochodzie
 
-Montaż akumulatora odbywa się po wcześniejszym ustaleniu szczegółów telefonicznie. Usługa może być wykonana z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
+Montaż akumulatora odbywa się przy samochodzie po wcześniejszym ustaleniu szczegółów telefonicznie. Usługa może być wykonana z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
 
 ### Odbiór starego akumulatora
 
@@ -59,9 +63,9 @@ Zużyty akumulator można zostawić do odpowiedniego recyklingu.
 
 ## Rodzaje akumulatorów
 
-- Akumulatory samochodowe: do aut osobowych, dostawczych i systemów Start-Stop.
-- Akumulatory motocyklowe: na sezon, do regularnej jazdy i pewnego rozruchu.
-- Akumulatory trakcyjne: do pracy, maszyn, wózków i zastosowań specjalnych.
+- Akumulatory samochodowe: do aut osobowych, dostawczych i systemów Start-Stop. Dobór uwzględnia wyposażenie auta, sposób jazdy i parametry obecnego akumulatora.
+- Akumulatory motocyklowe: na sezon, do regularnej jazdy i pewnego rozruchu. Przed doborem warto podać model motocykla albo parametry starego akumulatora.
+- Akumulatory trakcyjne: do pracy, maszyn, wózków i zastosowań specjalnych. Dobór ustalany jest po parametrach, sposobie użytkowania i miejscu pracy urządzenia.
 
 ## Marki
 
@@ -85,7 +89,9 @@ Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
 - Email: [dariusz.cieszynski@wp.pl](mailto:dariusz.cieszynski@wp.pl)
 - Trasa do biura: [Google Maps](https://www.google.com/maps/dir/?api=1&destination=Mi%C5%82a%208%2C%2040-464%20Katowice)
 
-## Godziny
+## Godziny kontaktu
+
+Są to godziny kontaktu telefonicznego, nie potwierdzone godziny otwarcia ani realizacji usług.
 
 | Dzień | Godziny |
 |-------|---------|
@@ -97,11 +103,23 @@ Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
 
 ### Czy test akumulatora jest darmowy?
 
-Tak, strona informuje o darmowym teście akumulatora. Szczegóły usługi, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie przed przyjazdem.
+Tak. Test pomaga ustalić przed wymianą, czy problem dotyczy akumulatora, ładowania czy sposobu użytkowania. Szczegóły usługi, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie.
 
-### Czy montaż akumulatora jest z dojazdem?
+### Czy wymiana akumulatora jest z dojazdem?
 
-Test i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
+Test, wymiana i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
+
+### Co przygotować przed telefonem?
+
+Warto przygotować markę i model auta, rocznik, silnik, objawy problemu oraz, jeśli to możliwe, parametry obecnego akumulatora.
+
+### Czy dobierane są akumulatory do aut Start-Stop?
+
+Tak, dobór uwzględnia wyposażenie auta, w tym system Start-Stop, sposób jazdy i parametry wymagane przez samochód.
+
+### Czy można zostawić stary akumulator?
+
+Tak, zużyty akumulator można zostawić do odpowiedniego recyklingu.
 
 ### Czy adres Miła 8 to warsztat?
 

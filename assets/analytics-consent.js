@@ -9,6 +9,7 @@
   var acceptButton = document.querySelector("[data-analytics-accept]");
   var rejectButton = document.querySelector("[data-analytics-reject]");
   var settingsButtons = document.querySelectorAll("[data-analytics-settings]");
+  var previouslyFocusedElement = null;
 
   function getPreference() {
     var rawPreference;
@@ -87,31 +88,51 @@
     document.head.appendChild(script);
   }
 
-  function showBanner() {
+  function showBanner(shouldMoveFocus) {
     if (banner) {
       banner.hidden = false;
+      document.body.classList.add("analytics-consent-open");
+
+      if (shouldMoveFocus && rejectButton) {
+        window.requestAnimationFrame(function () {
+          rejectButton.focus();
+        });
+      }
     }
   }
 
   function hideBanner() {
     if (banner) {
       banner.hidden = true;
+      document.body.classList.remove("analytics-consent-open");
     }
+  }
+
+  function restoreFocus() {
+    if (previouslyFocusedElement && document.contains(previouslyFocusedElement)) {
+      previouslyFocusedElement.focus();
+    }
+
+    previouslyFocusedElement = null;
   }
 
   function acceptAnalytics() {
     setPreference(acceptedValue);
     hideBanner();
     loadUmami();
+    restoreFocus();
   }
 
   function rejectAnalytics() {
     var hadLoadedUmami = hasUmamiLoaded();
     setPreference(rejectedValue);
     hideBanner();
+    restoreFocus();
 
     if (hadLoadedUmami) {
-      window.location.reload();
+      window.setTimeout(function () {
+        window.location.reload();
+      }, 0);
     }
   }
 
@@ -124,7 +145,10 @@
   }
 
   settingsButtons.forEach(function (button) {
-    button.addEventListener("click", showBanner);
+    button.addEventListener("click", function (event) {
+      previouslyFocusedElement = event.currentTarget;
+      showBanner(true);
+    });
   });
 
   var preference = getPreference();
@@ -132,6 +156,6 @@
   if (preference && preference.value === acceptedValue) {
     loadUmami();
   } else if (!isRejectedPreferenceCurrent(preference)) {
-    showBanner();
+    showBanner(false);
   }
 }());

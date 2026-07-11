@@ -52,8 +52,9 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--color-yellow);
+  outline: 3px solid var(--color-white);
   outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--color-navy-strong);
 }
 
 .page-shell {
@@ -161,11 +162,21 @@ button:focus-visible {
   text-wrap: balance;
 }
 
+.hero-title span {
+  display: block;
+}
+
 .hero-copy {
   max-width: 42rem;
   margin: 1.25rem 0 0;
   color: rgb(255 255 255 / 0.9);
   font-size: clamp(1.08rem, 2vw, 1.35rem);
+}
+
+.hero-area {
+  margin: 0.8rem 0 0;
+  color: var(--color-white);
+  font-weight: 800;
 }
 
 .hero-actions {
@@ -279,6 +290,45 @@ button:focus-visible {
   color: var(--color-muted);
 }
 
+.service-summary {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.service-summary p {
+  margin: 0;
+  padding: 1rem;
+  border-left: 0.25rem solid var(--color-yellow);
+  background: var(--color-white);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--color-navy);
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.owner-panel {
+  display: grid;
+  gap: 1.5rem;
+  align-items: end;
+}
+
+.owner-note {
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-top: 0.25rem solid var(--color-yellow);
+  border-radius: var(--radius-md);
+  background: var(--color-blue-soft-2);
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
 .card-title {
   margin: 1rem 0 0;
   color: var(--color-navy);
@@ -316,6 +366,10 @@ button:focus-visible {
   gap: 1.75rem 2.5rem;
   align-items: center;
   margin-top: 2rem;
+}
+
+.mobile-call-bar {
+  display: none;
 }
 
 .brand-strip img {
@@ -711,6 +765,7 @@ button:focus-visible {
 
 .not-found-visual img {
   width: min(100%, 24rem);
+  height: auto;
   aspect-ratio: 640 / 520;
   border-radius: var(--radius-md);
   object-fit: cover;
@@ -758,6 +813,15 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .service-summary,
+  .owner-panel {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .owner-panel > :first-child {
+    grid-column: span 2;
+  }
+
   .contact-action-rail {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -783,6 +847,17 @@ button:focus-visible {
 }
 
 @media (max-width: 42rem) {
+  .section {
+    padding-block: 2.5rem;
+  }
+
+  .hero-title {
+    overflow-wrap: anywhere;
+    font-size: 2.1rem;
+    line-height: 1.12;
+    text-wrap: auto;
+  }
+
   .hero-actions,
   .analytics-consent__actions {
     display: grid;
@@ -820,7 +895,7 @@ button:focus-visible {
   }
 
   .contact-action {
-    min-height: 5.75rem;
+    min-height: 5.25rem;
   }
 
   .contact-action-icon {
@@ -831,5 +906,66 @@ button:focus-visible {
   .contact-action-icon svg {
     width: 1.45rem;
     height: 1.45rem;
+  }
+
+  .service-card,
+  .battery-card {
+    padding: 1.1rem;
+  }
+
+  .battery-card img {
+    height: 10rem;
+  }
+
+  .contact-action-rail {
+    margin-top: 2rem;
+  }
+
+  .contact-visual,
+  .contact-visual-image {
+    min-height: 12rem;
+  }
+
+  .mobile-call-bar {
+    position: fixed;
+    inset: auto 0.75rem 0.75rem;
+    z-index: 15;
+    min-height: 3.25rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-navy-strong);
+    border-radius: var(--radius-md);
+    background: var(--color-yellow);
+    color: var(--color-navy-strong);
+    box-shadow: 0 8px 24px rgb(8 38 83 / 0.24);
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .mobile-call-bar-visible .mobile-call-bar {
+    display: flex;
+  }
+
+  body.mobile-call-bar-visible:not(.analytics-consent-open) {
+    padding-bottom: 4.75rem;
+  }
+
+  .analytics-consent-open .mobile-call-bar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

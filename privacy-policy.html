@@ -17,6 +17,19 @@
 </head>
 
 <body class="page-shell">
+    <section id="analytics-consent" class="analytics-consent"
+        aria-labelledby="analytics-consent-title" hidden>
+        <div class="analytics-consent__inner">
+            <p id="analytics-consent-title"><strong>Ustawienia statystyk</strong><br>
+                Za zgodą uruchomimy anonimowe statystyki bez reklam i profilowania.
+                <a href="./privacy-policy.html">Polityka prywatności</a></p>
+            <div class="analytics-consent__actions">
+                <button class="analytics-consent__reject" type="button" data-analytics-reject>Odrzuć</button>
+                <button class="analytics-consent__accept" type="button" data-analytics-accept>Akceptuję</button>
+            </div>
+        </div>
+    </section>
+
     <main>
         <header class="legal-header section">
             <div class="container">
@@ -134,7 +147,9 @@
                     zewnętrzne lub przepisy.</p>
             </section>
         </article>
-        <footer class="site-footer">
+    </main>
+
+    <footer class="site-footer">
             <div class="container footer-grid">
                 <div>
                     <p class="footer-kicker">Akumulatory Katowice</p>
@@ -144,8 +159,8 @@
                 <div>
                     <p class="footer-heading">Kontakt</p>
                     <ul class="footer-list">
-                        <li><a href="tel:+48501436661">501&nbsp;436&nbsp;661</a></li>
-                        <li><a href="mailto:dariusz.cieszynski@wp.pl">dariusz.cieszynski@wp.pl</a></li>
+                        <li><a href="tel:+48501436661" data-umami-event="footer-phone-cta">501&nbsp;436&nbsp;661</a></li>
+                        <li><a href="mailto:dariusz.cieszynski@wp.pl" data-umami-event="footer-email-cta">dariusz.cieszynski@wp.pl</a></li>
                     </ul>
                 </div>
                 <div class="privacy-note">
@@ -154,19 +169,7 @@
                     <button class="privacy-settings" type="button" data-analytics-settings>Zmień zgodę na statystyki</button>
                 </div>
             </div>
-        </footer>
-    </main>
-
-    <section id="analytics-consent" class="analytics-consent" aria-label="Zgoda na statystyki" hidden>
-        <div class="analytics-consent__inner">
-            <p>Za zgodą uruchomimy anonimowe statystyki bez reklam i profilowania.
-                <a href="./privacy-policy.html">Polityka prywatności</a></p>
-            <div class="analytics-consent__actions">
-                <button class="analytics-consent__reject" type="button" data-analytics-reject>Odrzuć</button>
-                <button class="analytics-consent__accept" type="button" data-analytics-accept>Akceptuję</button>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <script src="./assets/analytics-consent.js" defer></script>
 </body>

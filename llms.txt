@@ -1,6 +1,6 @@
-# Akumulatory Katowice - Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
+# Wymiana akumulatora Katowice - Sprzedaż Artykułów Przemysłowych Dariusz Cieszyński
 
-> Akumulatory w Katowicach: sprzedaż, dobór, darmowy test i montaż przy samochodzie. Obsługa Katowic-Giszowca i okolic po kontakcie telefonicznym.
+> Wymiana akumulatora w Katowicach: sprzedaż, dobór, darmowy test i montaż przy samochodzie. Obsługa Katowic-Giszowca i okolic po kontakcie telefonicznym.
 
 ## Najważniejsze strony
 
@@ -19,7 +19,7 @@
 ## Sposób obsługi
 
 - Najpierw kontakt telefoniczny i opis objawów.
-- Test i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze po wcześniejszym umówieniu.
+- Test, wymiana i montaż wykonywane są przy samochodzie: z dojazdem do klienta albo przy biurze po wcześniejszym umówieniu.
 - Adres Miła 8 to adres biura firmy, nie osobny warsztat.
 - Obszar obsługi: Katowice-Giszowiec i okolice po potwierdzeniu telefonicznym.
 
@@ -33,6 +33,11 @@
 
 - Sprawdzenie przed wymianą, czy problemem jest akumulator, ładowanie czy sposób użytkowania.
 - Szczegóły testu, dojazd i miejsce sprawdzenia należy potwierdzić telefonicznie.
+
+### Wymiana akumulatora z dojazdem
+
+- Wymiana i montaż przy samochodzie po wcześniejszym ustaleniu szczegółów telefonicznie.
+- Usługa może być wykonana z dojazdem do klienta albo przy biurze firmy po wcześniejszym umówieniu.
 
 ### Dobór właściwego akumulatora
 
@@ -50,9 +55,9 @@
 
 ## Rodzaje akumulatorów
 
-- Akumulatory samochodowe
-- Akumulatory motocyklowe
-- Akumulatory trakcyjne
+- Akumulatory samochodowe: do aut osobowych, dostawczych i systemów Start-Stop.
+- Akumulatory motocyklowe: na sezon, do regularnej jazdy i pewnego rozruchu.
+- Akumulatory trakcyjne: do pracy, maszyn, wózków i zastosowań specjalnych.
 
 ## Marki
 

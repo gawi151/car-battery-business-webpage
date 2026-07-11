@@ -16,6 +16,19 @@
 </head>
 
 <body class="page-shell">
+    <section id="analytics-consent" class="analytics-consent"
+        aria-labelledby="analytics-consent-title" hidden>
+        <div class="analytics-consent__inner">
+            <p id="analytics-consent-title"><strong>Ustawienia statystyk</strong><br>
+                Za zgodą uruchomimy anonimowe statystyki bez reklam i profilowania.
+                <a href="/privacy-policy.html">Polityka prywatności</a></p>
+            <div class="analytics-consent__actions">
+                <button class="analytics-consent__reject" type="button" data-analytics-reject>Odrzuć</button>
+                <button class="analytics-consent__accept" type="button" data-analytics-accept>Akceptuję</button>
+            </div>
+        </div>
+    </section>
+
     <main class="not-found-wrap">
         <section class="not-found-card" aria-labelledby="not-found-heading">
             <p class="footer-business">Akumulatory Katowice</p>
@@ -26,22 +39,12 @@
             <p>Ten adres nie prowadzi już do aktywnej podstrony. Wróć na stronę główną albo zadzwoń, jeśli chcesz zapytać o akumulator.</p>
             <nav class="hero-actions" aria-label="Najważniejsze linki">
                 <a class="button button-primary" href="/">Wróć na stronę główną</a>
-                <a class="button button-outline" href="tel:+48501436661" data-umami-event="not-found-phone-cta">Zadzwoń: 501&nbsp;436&nbsp;661</a>
+                <a class="button button-outline" href="tel:+48501436661" data-umami-event="not-found-phone-cta">Zadzwoń:&nbsp;501&nbsp;436&nbsp;661</a>
             </nav>
             <p><a href="/privacy-policy.html">Polityka prywatności</a></p>
         </section>
     </main>
 
-    <section id="analytics-consent" class="analytics-consent" aria-label="Zgoda na statystyki" hidden>
-        <div class="analytics-consent__inner">
-            <p>Za zgodą uruchomimy anonimowe statystyki bez reklam i profilowania.
-                <a href="/privacy-policy.html">Polityka prywatności</a></p>
-            <div class="analytics-consent__actions">
-                <button class="analytics-consent__reject" type="button" data-analytics-reject>Odrzuć</button>
-                <button class="analytics-consent__accept" type="button" data-analytics-accept>Akceptuję</button>
-            </div>
-        </div>
-    </section>
     <script src="/assets/analytics-consent.js" defer></script>
 </body>
 
