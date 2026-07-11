@@ -63,8 +63,35 @@ const heroArea = index.match(/<p class="hero-area">([^<]+)<\/p>/);
 assert.ok(heroArea, "homepage must contain a visible .hero-area paragraph");
 assert.match(
   heroArea[1],
-  /Katowice-Giszowiec i okolice po potwierdzeniu telefonicznym\./,
-  "hero area must state the confirmed Katowice-Giszowiec and nearby-area wording"
+  /Katowice-Giszowiec/,
+  "hero area must retain the confirmed Katowice-Giszowiec service location"
+);
+assert.match(
+  index,
+  /Test i wymiana akumulatora[\s\S]*z dojazdem[\s\S]*w Katowicach/,
+  "hero must lead with test and replacement"
+);
+assert.match(index, />Jak wygląda usługa<\/a>/, "secondary hero CTA must describe navigation");
+assert.equal(
+  (index.match(/DO UZUPEŁNIENIA Z WŁAŚCICIELEM/g) || []).length,
+  6,
+  "homepage must show six owner placeholders"
+);
+for (const ownerQuestion of [
+  /darmowy bez zakupu/i,
+  /koszt dojazdu/i,
+  /czas dojazdu/i,
+  /obszar dojazdu/i,
+  /dostępność akumulatora/i,
+  /formy płatności/i,
+  /warancja/i
+]) {
+  assert.match(index, ownerQuestion, `homepage must ask owner question: ${ownerQuestion}`);
+}
+assert.doesNotMatch(
+  index,
+  /Darmowy test przed wymianą/,
+  "homepage must remove the unqualified free-test claim"
 );
 assert.doesNotMatch(index, /bez sugerowania rozbudowanego warsztatu ani zespołu/, "owner copy must be positive and customer-facing");
 assert.match(index, /class="mobile-call-bar"/, "homepage needs a mobile call bar");
@@ -81,6 +108,21 @@ assert.match(
   css,
   /\.not-found-visual img\s*\{[^}]*height:\s*auto;/s,
   "404 image must preserve its intrinsic aspect ratio"
+);
+assert.match(
+  css,
+  /\.owner-todo\s*\{[^}]*background:\s*#fff1f2;[^}]*border:/s,
+  "owner placeholders need a pale red background and border"
+);
+assert.match(
+  css,
+  /\.owner-todo__label\s*\{[^}]*color:\s*#991b1b;/s,
+  "owner placeholder labels need dark red text"
+);
+assert.doesNotMatch(
+  css,
+  /\.owner-todo\s*\{[^}]*display:\s*none;/s,
+  "owner placeholders must remain visible"
 );
 assert.match(consent, /previouslyFocusedElement/, "consent script must track the settings trigger");
 assert.match(consent, /\.focus\(\)/, "consent script must move and restore focus");

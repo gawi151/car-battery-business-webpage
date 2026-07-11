@@ -179,6 +179,56 @@ button:focus-visible {
   font-weight: 800;
 }
 
+.owner-todo {
+  margin-top: 1.5rem;
+  padding: 1rem 1.125rem;
+  color: #451a1a;
+  background: #fff1f2;
+  border: 1px solid #fca5a5;
+  border-left: 6px solid #b91c1c;
+  border-radius: 0.5rem;
+}
+
+.owner-todo__label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #991b1b;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.owner-todo--compact {
+  max-width: 44rem;
+}
+
+.owner-todo p,
+.owner-todo span {
+  margin: 0;
+}
+
+.service-policy {
+  display: grid;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  padding: 1rem 1.125rem;
+  color: var(--color-ink);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-yellow);
+  border-radius: var(--radius-sm);
+  background: var(--color-white);
+}
+
+.faq-owner-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.faq-owner-grid .owner-todo {
+  margin-top: 0;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -810,6 +860,10 @@ button:focus-visible {
   }
 
   .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .faq-owner-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
