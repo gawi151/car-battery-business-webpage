@@ -207,6 +207,61 @@ button:focus-visible {
   margin: 0;
 }
 
+.owner-todo__heading {
+  display: block;
+  margin: 0.65rem 0 0.35rem;
+  color: var(--color-navy);
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.owner-todo__examples {
+  margin-top: 0.85rem;
+  padding: 0.85rem;
+  background: #ffe4e6;
+  border-radius: var(--radius-sm);
+}
+
+.owner-todo__examples > strong,
+.owner-todo__template > strong,
+.owner-todo__answer > strong {
+  display: block;
+  color: #7f1d1d;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+}
+
+.owner-todo__examples ul {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0.55rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.owner-todo__template {
+  margin-top: 0.85rem;
+  padding: 0.85rem;
+  background: var(--color-white);
+  border: 1px dashed #b91c1c;
+  border-radius: var(--radius-sm);
+}
+
+.owner-todo__template p {
+  margin-top: 0.45rem;
+  font-style: italic;
+}
+
+.owner-todo__answer {
+  margin-top: 0.85rem;
+}
+
+.owner-todo__answer span {
+  display: block;
+  height: 1.6rem;
+  border-bottom: 1px solid #991b1b;
+}
+
 .service-policy {
   display: grid;
   gap: 0.25rem;

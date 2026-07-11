@@ -77,6 +77,44 @@ assert.equal(
   6,
   "homepage must show six owner placeholders"
 );
+for (const label of [
+  "PRZYKŁADY — NIE PUBLIKOWAĆ",
+  "SZABLON ODPOWIEDZI",
+  "POTWIERDZONA ODPOWIEDŹ"
+]) {
+  assert.equal(
+    (index.match(new RegExp(label, "g")) || []).length,
+    6,
+    `${label} must appear in every owner card`
+  );
+}
+for (const className of [
+  "owner-todo__heading",
+  "owner-todo__examples",
+  "owner-todo__template",
+  "owner-todo__answer"
+]) {
+  assert.equal(
+    (index.match(new RegExp(`class="${className}`, "g")) || []).length,
+    6,
+    `${className} must appear in every owner card`
+  );
+}
+assert.equal(
+  (index.match(/class="owner-todo__examples">[\s\S]*?<ul>/g) || []).length,
+  6,
+  "every owner card must present examples as a semantic list"
+);
+for (const heading of [
+  "Gdzie dokładnie realizowany jest dojazd?",
+  "Co klient zapłaci i jak szybko można przyjechać?",
+  "Jak potwierdzana jest dostępność właściwego akumulatora?",
+  "Jak klient może zapłacić i jaki dokument otrzyma?",
+  "Jak działa gwarancja i zgłoszenie problemu?",
+  "Czy klient powinien znać jeszcze inne warunki?"
+]) {
+  assert.match(index, new RegExp(heading.replace(/[?]/g, "\\?")), `missing owner heading: ${heading}`);
+}
 for (const ownerQuestion of [
   /darmowy bez zakupu/i,
   /koszt dojazdu/i,
@@ -124,6 +162,9 @@ assert.doesNotMatch(
   /\.owner-todo\s*\{[^}]*display:\s*none;/s,
   "owner placeholders must remain visible"
 );
+assert.match(css, /\.owner-todo__examples\s*\{[^}]*background:/s, "owner examples need a visible inset panel");
+assert.match(css, /\.owner-todo__template\s*\{[^}]*border:/s, "owner templates need a visible boundary");
+assert.match(css, /\.owner-todo__answer span\s*\{[^}]*border-bottom:/s, "confirmed answers need writing lines");
 assert.match(consent, /previouslyFocusedElement/, "consent script must track the settings trigger");
 assert.match(consent, /\.focus\(\)/, "consent script must move and restore focus");
 assert.match(publisher, /--dry-run/, "publisher must support a non-pushing dry run");
