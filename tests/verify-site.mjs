@@ -9,6 +9,7 @@ const sitemap = read("sitemap.xml");
 const css = read("assets/site.css");
 const consent = read("assets/analytics-consent.js");
 const mobileCallBar = read("assets/mobile-call-bar.js");
+const publisher = read("scripts/publish-gh-pages.mjs");
 
 function assertFooterOutsideMain(html, page) {
   const mainClose = html.indexOf("</main>");
@@ -83,6 +84,13 @@ assert.match(
 );
 assert.match(consent, /previouslyFocusedElement/, "consent script must track the settings trigger");
 assert.match(consent, /\.focus\(\)/, "consent script must move and restore focus");
+assert.match(publisher, /--dry-run/, "publisher must support a non-pushing dry run");
+assert.match(publisher, /tests\/verify-site\.mjs/, "publisher must run site checks before publishing");
+assert.match(publisher, /worktree add/, "publisher must isolate the gh-pages checkout");
+assert.match(publisher, /HEAD:gh-pages/, "publisher must push only the isolated deployment commit");
+for (const publicFile of ["index.html", "404.html", "privacy-policy.html", "robots.txt", "sitemap.xml", "llms.txt", "llms-full.txt", "CNAME"]) {
+  assert.match(publisher, new RegExp(`"${publicFile.replace(".", "\\.")}"`), `publisher allowlist must include ${publicFile}`);
+}
 
 const jsonLdMatch = index.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
 assert.ok(jsonLdMatch, "homepage must contain JSON-LD");
